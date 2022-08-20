@@ -8,6 +8,7 @@ frequently used snippets or minimalist components in
   * https://www.primefaces.org/primeui/
 * python
 * java
+  * https://openjdk.org/projects/jdk/
 * groovy
 * SQL
 * cypher
