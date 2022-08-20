@@ -7,4 +7,9 @@ freq/ly used snippets or minimalist components in
   * https://webix.com/widgets/
   * https://www.primefaces.org/primeui/
 * python
+* java
+* groovy
+* SQL
+* cypher
 * awk
+* etc.
