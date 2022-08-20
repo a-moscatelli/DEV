@@ -1,17 +1,36 @@
+<!DOCTYPE html>
 <html>
+	<title>no jquery</title>
 	<body>
-		<div id="div1_NW" style="border: thin solid black; float: left;"></div>
-		<div id="div2_NE" style="border: thin solid blue;"></div>
-		<div id="div3_S" style="border: thin solid green;"></div>
+		<div id="div1_NW"		style="border: thin solid black;		float: left;"></div>
+		<div id="div2_NC"		style="border: thin solid blue;		float: left;"></div>
+		<div id="div2_NE"		style="border: thin solid green;"></div>
+		<div id="div3_C" style="border: thin solid green;"></div>
+		<div id="div4_S" style="border: thin solid red;">
+			<form>
+				<label for="fname">date:</label><br>
+				<input type="text" id="dt" name="fname" value='11-Jul-2022' onchange=propagate()>
+			</form>
+		</div>
+		
 
 		<script>
-		var DMY='11-Jul-2022';
-		var Mmm=DMY.substr(3,3);
-		var mm = '010203040506070809101112'.substr('JanFebMarAprMayJunJulAugSepOctNovDec'.indexOf(Mmm)/3*2,2)
-		// a='01' when the provided Month is not valid
-		document.getElementById("div1_NW").innerHTML = mm;
-		document.getElementById("div2_NE").innerHTML = mm;
-		document.getElementById("div3_S").innerHTML = mm;
+		
+		function propagate() {
+			var DMY = document.getElementById("dt").value;
+			var DMYS = DMY.split("-");
+			var dd = DMYS[0];
+			var Mmm = DMYS[1];
+			var yy = DMYS[2];
+			var mm = '010203040506070809101112'.substr('JanFebMarAprMayJunJulAugSepOctNovDec'.indexOf(Mmm)/3*2,2)
+			// a='01' when the provided Month is not valid
+			document.getElementById("div1_NW").innerHTML = dd;
+			document.getElementById("div2_NC").innerHTML = mm;
+			document.getElementById("div2_NE").innerHTML = yy;		
+		};
+	
+		propagate();
+		
 		</script>
 	</body>
 </html>
