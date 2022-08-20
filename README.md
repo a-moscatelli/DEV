@@ -7,10 +7,9 @@ frequently used snippets or minimalist components in
   * https://webix.com/widgets/
   * https://www.primefaces.org/primeui/
 * python
-* java
-  * https://openjdk.org/projects/jdk/
+* java - https://openjdk.org/projects/jdk/
 * groovy
 * SQL
 * cypher
-* awk
+* awk - https://www.gnu.org/software/gawk/manual/gawk.html
 * etc.
