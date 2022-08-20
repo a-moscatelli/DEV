@@ -1,0 +1,65 @@
+# jupyter
+
+# how to display some html :
+
+import IPython.display as idisp
+
+idisp.display(idisp.HTML('<h1>Hello, world!</h1>'))
+
+
+ --------------------------
+ 
+
+to display a multi-level python dataframe in jupyter
+
+ 
+
+https://www.tutorialspoint.com/python-stacking-a-multi-level-column-in-a-pandas-dataframe
+
+display(dataFrame.stack())
+
+ 
+--------------------------
+ 
+ 
+
+how to show python libs:
+
+c:\Python37-64\Scripts\pip freeze
+
+
+ --------------------------
+ 
+ 
+
+ 
+ 
+
+pandas pivot with subtotals: not straightworward
+
+https://towardsdatascience.com/tabulating-subtotals-dynamically-in-python-pandas-pivot-tables-6efadbb79be2
+
+https://www.datatrigger.org/post/subtotals/
+
+ 
+
+ --------------------------
+ 
+
+df_basket1.groupby('Item_group').agg({'AMT': 'sum'}).show()
+
+or,
+
+b.groupBy("Name").agg(sum("Sal").alias("sum_salary"),max("Sal").alias("MaximumOfSal")).show()
+
+or,
+
+https://stackoverflow.com/questions/50161556/chaining-multiple-groupby-in-pyspark
+
+ 
+
+ 
+--------------------------
+ 
+ 
+
