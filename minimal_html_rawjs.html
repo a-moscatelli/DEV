@@ -1,0 +1,17 @@
+<html>
+	<body>
+		<div id="div1_NW" style="border: thin solid black; float: left;"></div>
+		<div id="div2_NE" style="border: thin solid blue;"></div>
+		<div id="div3_S" style="border: thin solid green;"></div>
+
+		<script>
+		var DMY='11-Jul-2022';
+		var Mmm=DMY.substr(3,3);
+		var mm = '010203040506070809101112'.substr('JanFebMarAprMayJunJulAugSepOctNovDec'.indexOf(Mmm)/3*2,2)
+		// a='01' when the provided Month is not valid
+		document.getElementById("div1_NW").innerHTML = mm;
+		document.getElementById("div2_NE").innerHTML = mm;
+		document.getElementById("div3_S").innerHTML = mm;
+		</script>
+	</body>
+</html>
