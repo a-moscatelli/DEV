@@ -1,6 +1,6 @@
 # DEV
 
-freq/ly used snippets or minimalist components in
+frequently used snippets or minimalist components in
 * HTML / javascript / jquery
 * js frameworks
   * https://w2ui.com/web/demos
