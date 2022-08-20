@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	</head>
+	<title>with jquery</title>
+	<body>
+		<div id="div1_NW"		style="border: thin solid black;		float: left;"></div>
+		<div id="div2_NC"		style="border: thin solid blue;		float: left;"></div>
+		<div id="div2_NE"		style="border: thin solid green;"></div>
+		<div id="div3_C" style="border: thin solid green;"></div>
+		<div id="div4_S" style="border: thin solid red;">
+			<form>
+				<label for="fname">date:</label><br>
+				<input type="text" id="dt" name="fname" value='11-Jul-2022'>
+			</form>
+		</div>
+		
+
+		<script>
+		
+		function propagate() {
+			var DMY = $("form input[type='text']").val();
+			var DMYS = DMY.split("-");
+			var dd = DMYS[0];
+			var Mmm = DMYS[1];
+			var yy = DMYS[2];
+			var mm = '010203040506070809101112'.substr('JanFebMarAprMayJunJulAugSepOctNovDec'.indexOf(Mmm)/3*2,2)
+			// a='01' when the provided Month is not valid
+			$("#div1_NW").html(dd);
+			$("#div2_NC").html(mm);
+			$("#div2_NE").html(yy);		
+		};
+	
+		$(function() {
+			propagate();
+			$("#dt").change(function(){propagate()});
+		});
+		
+		</script>
+	</body>
+</html>
