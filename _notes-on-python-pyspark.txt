@@ -62,4 +62,23 @@ https://stackoverflow.com/questions/50161556/chaining-multiple-groupby-in-pyspar
 --------------------------
  
  
+# Run sql on sqlserver
+
+import pyodbc
+
+uurl = [
+"DRIVER={SQL Server};",
+"SERVER=", serverz, "\SKYNET,49168;",
+"DATABASE=BI_POWERBI;",
+"UID=", userz, ";"
+"PWD=", passwordz, ";"
+"Trusted_Connection=No;"
+]
+
+connurl = ''.join(uurl)
+
+conn = pyodbc.connect(connurl)
+df = pd.read_sql_table('dbo.table', conn)
+
+# # # #
 
