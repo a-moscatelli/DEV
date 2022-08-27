@@ -1,0 +1,19 @@
+Apples Oranges Grapes
+Oranges Apples Gum
+Oranges Bananas Grapes
+Gum Bananas Bread
+Apples Oranges Bread
+
+
+
+# output
+#      K                     Itemset       perm     split          rule antec         rule consec 	sup itemset sup antec    confid  		lift
+#	6   2           [Apples, Oranges]     (0, 1)     1            [Apples]           [Oranges]          0.6        		0.6  		1.000000  1.25
+#	7   2           [Apples, Oranges]     (1, 0)     1           [Oranges]            [Apples]          0.6        		0.8  		0.750000  1.25
+
+
+
+
+# https://www.mishelper.com/data-mining/association-rules/metrics/
+
+
