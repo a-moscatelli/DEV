@@ -8,3 +8,10 @@ https://mariadb.com/resources/blog/automatic-data-versioning-in-mariadb-server-1
 	3. SELECT *, ROW_START, ROW_END FROM Person FOR SYSTEM_TIME ALL
 	4. or, SELECT * FROM Person FOR SYSTEM_TIME AS OF TIMESTAMP '2018-05-03 07:22:33';
 	
+
+
+
+DB:
+https://towardsdatascience.com/top-10-databases-to-use-in-2021-d7e6a85402ba
+https://db-engines.com/en/
+https://dbdb.io/browse
