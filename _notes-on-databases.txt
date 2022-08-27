@@ -1,0 +1,10 @@
+
+
+topic: Data analytics (retrospective, trends etc.)
+\https://mariadb.com/kb/en/system-versioned-tables/
+https://mariadb.com/resources/blog/automatic-data-versioning-in-mariadb-server-10-3/
+	1. CREATE TABLE Person (...) WITH SYSTEM VERSIONING;
+	2. inserts + updates ...
+	3. SELECT *, ROW_START, ROW_END FROM Person FOR SYSTEM_TIME ALL
+	4. or, SELECT * FROM Person FOR SYSTEM_TIME AS OF TIMESTAMP '2018-05-03 07:22:33';
+	
