@@ -1,14 +1,24 @@
 
 
 topic: Data analytics (retrospective, trends etc.)
-\https://mariadb.com/kb/en/system-versioned-tables/
++++
+https://mariadb.com/kb/en/system-versioned-tables/
 https://mariadb.com/resources/blog/automatic-data-versioning-in-mariadb-server-10-3/
 	1. CREATE TABLE Person (...) WITH SYSTEM VERSIONING;
 	2. inserts + updates ...
 	3. SELECT *, ROW_START, ROW_END FROM Person FOR SYSTEM_TIME ALL
 	4. or, SELECT * FROM Person FOR SYSTEM_TIME AS OF TIMESTAMP '2018-05-03 07:22:33';
++++
 	
 
+
+https://esj.com/articles/2011/03/01/five-tips-managing-version-tables.aspx
+https://www.red-gate.com/simple-talk/databases/sql-server/database-administration-sql-server/sql-strategies-for-versioned-data/
+https://www.red-gate.com/simple-talk/devops/database-devops/yet-another-sql-strategy-for-versioned-data/
+https://docs.microsoft.com/en-us/sql/relational-databases/tables/manage-retention-of-historical-data-in-system-versioned-temporal-tables?view=sql-server-ver16
+and
+https://stackoverflow.com/questions/39281/database-design-for-revisions
+https://stackoverflow.com/questions/762405/database-data-versioning
 
 
 DB:
