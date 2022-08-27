@@ -1,0 +1,17 @@
+
+
+
+templating
+
+mustache:
+http://mustache.github.io/
+mustache for python	https://github.com/noahmorrison/chevron
+https://github.com/fletcher/magnum
+groovy: https://gist.github.com/agentgt/1bc5f14e62bce11e2ceb
+
+
+
+velocity
+ninja2
+
+
