@@ -29,6 +29,27 @@ http://en.wikipedia.org/wiki/Slowly_Changing_Dimension
 http://en.wikipedia.org/wiki/Tuple-versioning
 https://en.wikipedia.org/wiki/Temporal_database
 
+MPP
+https://www.integrate.io/blog/what-is-an-mpp-database/
+https://database.guide/what-is-an-mpp-database/
+https://insightsoftware.com/blog/mpp-columnar-databases/
+https://www.factioninc.com/blog/it-challenges/massively-parallel-processing/
+
+
+A Powerful Addition to Your Postgres Toolbelt: Table Inheritance
+https://arctype.com/blog/inheritance-in-postgres/
+https://www.postgresql.org/docs/9.1/ddl-inherit.html
+ODBMS https://itnext.io/object-management-in-postgresql-36ab896b4c07
+https://www.2ndquadrant.com/en/blog/using-java-object-oriented-querying-jooq-with-postgresql/
+
+triggers
+https://mariadb.com/kb/en/trigger-overview/
+https://mariadb.com/kb/en/triggers/
+https://www.tutorialspoint.com/postgresql/postgresql_triggers.htm
+https://www.postgresqltutorial.com/postgresql-triggers/
+
+
+
 
 DB:
 https://towardsdatascience.com/top-10-databases-to-use-in-2021-d7e6a85402ba
