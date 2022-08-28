@@ -9,7 +9,10 @@ https://mariadb.com/resources/blog/automatic-data-versioning-in-mariadb-server-1
 	3. SELECT *, ROW_START, ROW_END FROM Person FOR SYSTEM_TIME ALL
 	4. or, SELECT * FROM Person FOR SYSTEM_TIME AS OF TIMESTAMP '2018-05-03 07:22:33';
 +++
-	
+
+https://stackoverflow.com/questions/50118372/versioning-in-the-database
+https://stackoverflow.com/questions/47478331/how-to-best-manage-historical-lookup-values-in-a-database/47505253#47505253
+
 
 
 https://esj.com/articles/2011/03/01/five-tips-managing-version-tables.aspx
@@ -19,6 +22,12 @@ https://docs.microsoft.com/en-us/sql/relational-databases/tables/manage-retentio
 and
 https://stackoverflow.com/questions/39281/database-design-for-revisions
 https://stackoverflow.com/questions/762405/database-data-versioning
+
+
+https://www.geeksforgeeks.org/dimensional-data-modeling/
+http://en.wikipedia.org/wiki/Slowly_Changing_Dimension
+http://en.wikipedia.org/wiki/Tuple-versioning
+https://en.wikipedia.org/wiki/Temporal_database
 
 
 DB:
