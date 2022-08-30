@@ -1,0 +1,30 @@
+
+http://meirwah.github.io/awesome-workflow-engines/
+
+
+https://stackshare.io/stackups/airflow-vs-apache-oozie
+
+https://www.bizety.com/2017/06/05/open-source-data-pipeline-luigi-vs-azkaban-vs-oozie-vs-airflow/
+... unlike similar workflow managers Oozie and Azkaban, which were built specifically for Hadoop, 
+Luigi’s philosophy is to make everything as general as possible. 
+Luigi is code-based, rather than GUI-based or declarative, with everything (including the dependency graph) in Python.
+The user interface (UI) allows you to search, filter, or monitor of the status of each task.
+You can also visualize the workflow there in order to see which tasks on the dependency graph are complete and which have yet to be run.
+
+Similar to Luigi, it is Python-based with workflow DAGs defined as code to make it 
+as collaborative as possible and to ensure it can be easily maintained, versioned, and tested. 
+
+https://www.godaddy.com/engineering/2018/11/15/developer-view-oozie-vs-airflow/
+
+https://hevodata.com/learn/airflow-alternatives/
+https://sourceforge.net/software/product/Apache-Airflow/alternatives
+
+
+https://flink.apache.org/
+Stateful Computations over Data Streams
+
+
+
+BTW (non workflow mgrs)
+https://data-flair.training/blogs/how-apache-spark-works/
+https://camel.apache.org/
