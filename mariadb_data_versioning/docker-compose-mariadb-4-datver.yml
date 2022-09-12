@@ -1,0 +1,31 @@
+
+
+# https://hub.docker.com/_/mariadb
+
+version: '3'
+
+services:
+
+  mariadb:
+    image: mariadb:10.9.2
+    restart: always
+    environment:
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_DATABASE : testdb
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+    #These are used in conjunction to create a new user and to set that user's password. Both user and password variables are required for a user to be created. This user will be granted all access (corresponding to GRANT ALL) to the MARIADB_DATABASE database.
+    # Do note that there is no need to use this mechanism to create the root superuser, that user gets created by default with the password specified by the MARIADB_ROOT_PASSWORD / MYSQL_ROOT_PASSWORD variable.
+
+    ports:
+     - 3306:3306
+    volumes:
+    - "/m/DEV/docker_volumes/mariadb1:/var/lib/mysql"
+    # - mysql:/var/lib/mysql
+#    healthcheck:
+#      test: ["CMD-SHELL", 'mysqladmin ping']
+#      interval: 10s
+#      timeout: 2s
+#      retries: 10
+     # https://stackoverflow.com/questions/69708629/maria-db-docker-access-denied-for-user-rootlocalhost
+
