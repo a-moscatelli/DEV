@@ -1,0 +1,72 @@
+
+M:\DEV\github__a_moscatelli\repositories\DEV\mariadb_data_versioning>call setenv.bat 
+
+M:\DEV\github__a_moscatelli\repositories\DEV\mariadb_data_versioning>set MARIADB_USER=user1 
+
+M:\DEV\github__a_moscatelli\repositories\DEV\mariadb_data_versioning>set MARIADB_PASSWORD=my_cool_secret 
+
+M:\DEV\github__a_moscatelli\repositories\DEV\mariadb_data_versioning>set MARIADB_DATABASE=testdb 
+
+M:\DEV\github__a_moscatelli\repositories\DEV\mariadb_data_versioning>set MARIADB_ROOT_PASSWORD=my_cool_secret_root 
+
+M:\DEV\github__a_moscatelli\repositories\DEV\mariadb_data_versioning>set MARIADB_USER=example-user 
+
+M:\DEV\github__a_moscatelli\repositories\DEV\mariadb_data_versioning>set MARIADB_PASSWORD=my_cool_secret 
+
+M:\DEV\github__a_moscatelli\repositories\DEV\mariadb_data_versioning>set MARIADB_ROOT_PASSWORD=my-secret-pw 
+
+M:\DEV\github__a_moscatelli\repositories\DEV\mariadb_data_versioning>set JAVA_HOME=M:\APPS\openjdk8 
+
+M:\DEV\github__a_moscatelli\repositories\DEV\mariadb_data_versioning>set GROOVY=M:\_MG_PORTABLE\_MG_STACK_Y\groovy-2.5.6\bin\groovy.bat 
+
+M:\DEV\github__a_moscatelli\repositories\DEV\mariadb_data_versioning>call M:\_MG_PORTABLE\_MG_STACK_Y\groovy-2.5.6\bin\groovy.bat test_hist_query_on_mariadb.groovy 
+dropping all tables - if any ...
+creating all tables ...
+populating ...
+1 -> Alberto, Milan, MSc, a@b.com
+2 -> Barbara, chicago, MSc, a@b.com
+3 -> Carl, Munich, Phd, a@b.com
+4 -> Darwin, chicago, MSc, a@b.com
+pausing for 3s ...
+taking the current timestamp ...
+2022-09-24 05:57:26
+---
+pausing for 3s ...
+updating ...
+pausing for 3s ...
+================================================================================
+showing table as of now...
+1 -> Alberto, Milan, M.Sc. (amended), alberto@b.it (amended)
+2 -> Barbara, Chicago (amended), M.Sc. (amended), a@b.com
+3 -> Carl, Munich, Phd, a@b.com
+4 -> Darwin, Chicago (amended), M.Sc. (amended), a@b.com
+================================================================================
+================================================================================
+showing table as of 3s ago i.e. before the last update ...
+1 -> Alberto, Milan, MSc, a@b.com
+2 -> Barbara, Chicago (amended), MSc, a@b.com
+3 -> Carl, Munich, Phd, a@b.com
+4 -> Darwin, Chicago (amended), MSc, a@b.com
+================================================================================
+[pid:2, pname:Barbara, email:a@b.com, cname:Chicago (amended), dname:MSc]I can only see the latest city name becasue the city table is not defined as historicalI can see the historical degree name becasue the degree table is defined as historicalshowing table with full history...
+================================================================================
+Alberto, Milan, MSc, a@b.com
+Alberto, Milan, MSc, a@b.com
+Alberto, Milan, MSc, a@b.com
+Alberto, Milan, M.Sc. (amended), a@b.com
+Alberto, Milan, MSc, alberto@b.it (amended)
+Alberto, Milan, MSc, alberto@b.it (amended)
+Alberto, Milan, MSc, alberto@b.it (amended)
+Alberto, Milan, M.Sc. (amended), alberto@b.it (amended)
+Barbara, Chicago (amended), MSc, a@b.com
+Barbara, Chicago (amended), MSc, a@b.com
+Barbara, Chicago (amended), MSc, a@b.com
+Barbara, Chicago (amended), M.Sc. (amended), a@b.com
+Carl, Munich, Phd, a@b.com
+Darwin, Chicago (amended), MSc, a@b.com
+Darwin, Chicago (amended), MSc, a@b.com
+Darwin, Chicago (amended), MSc, a@b.com
+Darwin, Chicago (amended), M.Sc. (amended), a@b.com
+================================================================================
+17
+all good!
