@@ -29,7 +29,7 @@ populating ...
 4 -> Darwin, chicago, MSc, a@b.com
 pausing for 3s ...
 taking the current timestamp ...
-2022-09-24 05:57:26
+2022-09-24 06:49:28
 ---
 pausing for 3s ...
 updating ...
@@ -48,25 +48,26 @@ showing table as of 3s ago i.e. before the last update ...
 3 -> Carl, Munich, Phd, a@b.com
 4 -> Darwin, Chicago (amended), MSc, a@b.com
 ================================================================================
-[pid:2, pname:Barbara, email:a@b.com, cname:Chicago (amended), dname:MSc]I can only see the latest city name becasue the city table is not defined as historicalI can see the historical degree name becasue the degree table is defined as historicalshowing table with full history...
+[pid:2, pname:Barbara, email:a@b.com, cname:Chicago (amended), dname:MSc]I can only see the latest city name because the city table is not defined as historicalI can see the historical degree name because the degree table is defined as historicalshowing table with full history...
 ================================================================================
-Alberto, Milan, MSc, a@b.com
-Alberto, Milan, MSc, a@b.com
-Alberto, Milan, MSc, a@b.com
-Alberto, Milan, M.Sc. (amended), a@b.com
-Alberto, Milan, MSc, alberto@b.it (amended)
-Alberto, Milan, MSc, alberto@b.it (amended)
-Alberto, Milan, MSc, alberto@b.it (amended)
-Alberto, Milan, M.Sc. (amended), alberto@b.it (amended)
-Barbara, Chicago (amended), MSc, a@b.com
-Barbara, Chicago (amended), MSc, a@b.com
-Barbara, Chicago (amended), MSc, a@b.com
-Barbara, Chicago (amended), M.Sc. (amended), a@b.com
-Carl, Munich, Phd, a@b.com
-Darwin, Chicago (amended), MSc, a@b.com
-Darwin, Chicago (amended), MSc, a@b.com
-Darwin, Chicago (amended), MSc, a@b.com
-Darwin, Chicago (amended), M.Sc. (amended), a@b.com
+1, Alberto, a@b.com, Milan, MSc
+1, Alberto, a@b.com, Milan, MSc
+1, Alberto, a@b.com, Milan, MSc
+1, Alberto, a@b.com, Milan, M.Sc. (amended)
+1, Alberto, alberto@b.it (amended), Milan, MSc
+1, Alberto, alberto@b.it (amended), Milan, MSc
+1, Alberto, alberto@b.it (amended), Milan, MSc
+1, Alberto, alberto@b.it (amended), Milan, M.Sc. (amended)
+2, Barbara, a@b.com, Chicago (amended), MSc
+2, Barbara, a@b.com, Chicago (amended), MSc
+2, Barbara, a@b.com, Chicago (amended), MSc
+2, Barbara, a@b.com, Chicago (amended), M.Sc. (amended)
+3, Carl, a@b.com, Munich, Phd
+4, Darwin, a@b.com, Chicago (amended), MSc
+4, Darwin, a@b.com, Chicago (amended), MSc
+4, Darwin, a@b.com, Chicago (amended), MSc
+4, Darwin, a@b.com, Chicago (amended), M.Sc. (amended)
 ================================================================================
-17
+17 (nonsense)
+
 all good!

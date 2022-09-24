@@ -123,8 +123,10 @@ select
 F.id as pid,
 F.name as pname,
 F.email as email,
+C.id as cid,
 C.name as cname,
 D.name as dname,
+D.id as did,
 D.ROW_START D_ROW_START,
 D.ROW_END D_ROW_END,
 F.ROW_START F_ROW_START,
@@ -180,9 +182,6 @@ assert row1?.email?.contains("(amended)")
 
 println "=" * 80
 println "showing table as of 3s ago i.e. before the last update ..."
-//sql.eachRow( "select * from KIMBALL_FACT FOR SYSTEM_TIME AS OF TIMESTAMP '"+past+"'" ){ row -> println "$row.id -> $row.name , $row.url" }
-
-//String sub1 = "(select * FROM KIMBALL_FACT FOR SYSTEM_TIME AS OF TIMESTAMP '"+past+"')"
 
 
 
@@ -192,21 +191,20 @@ println "=" * 80
 row2 = sql.firstRow( queryt2 + " and F.name ='Barbara'", [ts:past] )
 print row2
 assert row2?.cname?.contains("(amended)")
-print "I can only see the latest city name becasue the city table is not defined as historical"
+print "I can only see the latest city name because the city table is not defined as historical"
 assert ! row2?.dname?.contains("(amended)")
-print "I can see the historical degree name becasue the degree table is defined as historical"
+print "I can see the historical degree name because the degree table is defined as historical"
 
 println "showing table with full history..."
 println "=" * 80
-sql.eachRow( queryt3 ){ row -> println "$row.pname, $row.cname, $row.dname, $row.email" }
+sql.eachRow( queryt3 ){ row -> println "$row.pid, $row.pname, $row.email, $row.cname, $row.dname" }
 println "=" * 80
 int NR = sql.rows(queryt3).size()
-println NR
+println NR + " (nonsense)"
 assert NR == 17
 
 
-
-//sql.eachRow( "select *, ROW_START, ROW_END from KIMBALL_FACT FOR SYSTEM_TIME ALL" ){ row -> println row } // "$row.id -> $row.name , $row.url" }
+println ""
 println "all good!"
 
 // https://dbschema.com/jdbc-driver/MariaDb.html
