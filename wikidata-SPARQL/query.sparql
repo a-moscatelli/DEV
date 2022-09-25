@@ -1,0 +1,3 @@
+SELECT ?i ?iLabel ?c ?cLabel WHERE { ?i wdt:P31 wd:Q3917681. ?i wdt:P137 ?c.
+SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+} Limit 50
