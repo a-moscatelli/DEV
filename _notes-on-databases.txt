@@ -63,3 +63,8 @@ https://dbdb.io/browse
 https://en.wikipedia.org/wiki/Raft_(algorithm)
 https://en.wikipedia.org/wiki/Paxos_(computer_science)
 https://en.wikipedia.org/wiki/Long-running_transaction	SAGA pattern
+
+
+"Business Analytics"
+https://learnsql.com/blog/lead-and-lag-functions-in-sql/
+https://www.geeksforgeeks.org/mysql-lead-and-lag-function/
