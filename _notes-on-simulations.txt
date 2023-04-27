@@ -1,7 +1,0 @@
-
-
-
-https://www.mathworks.com/help/finance/pricing-american-basket-options-by-standard-monte-carlo-and-quasi-monte-carlo-simulation.html
-
-https://www.mathworks.com/help/stats/simulating-dependent-random-variables-using-copulas.html
-
