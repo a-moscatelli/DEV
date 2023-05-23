@@ -7,7 +7,7 @@
 #000000	1	0d	13	N/P	nonPr
 #000000	2	0a	10	N/P	nonPr
 
-BEGIN {FS="\t";	LINE_NIL="NIL" "\t" 	"\t"	"\t"	"\t"	"\t"	}
+BEGIN {FS="\t";	LINE_NIL="NIL" "\t" 	"\t"	"\t"	"\t"	"\t"	"\t" }
 
 NR==1{ HDR=$0; print HDR	"\t"	"prev"	"\t"	HDR	"\t"	"next" 	"\t"	HDR }
 NR>3 {	LINE["NR-2"]=LINE["NR-1"]	}

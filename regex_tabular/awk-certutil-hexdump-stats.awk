@@ -13,9 +13,11 @@ BEGIN {FS="\t"}
 NR>1 {
 	hexcode[$3]++
 	chclass[$3]=$6
+	chclass2[$3]=$7
 	chdec[$3]=$4
 	chch[$3]=$5
 	classcnt[$6]++
+	class2cnt[$7]++
 }
 END {
 	print "hex"	"\t"	"dec"		"\t"	"chr"		"\t"	"class"		"\t"	"cnt"
@@ -27,7 +29,11 @@ END {
 	print "-"
 	print "total bytes [any]: " (NR-1)
 	for(chc in classcnt) {
-		print "total bytes [" chc "]: " classcnt[chc]
+		print "total bytes class [" chc "]: " classcnt[chc]
+	}
+	print "-"
+	for(chc in class2cnt) {
+		print "total bytes class2 [" chc "]: " class2cnt[chc]
 	}
 	print "-"
 	#print "2.1 tot [alpha]: " totAlpha

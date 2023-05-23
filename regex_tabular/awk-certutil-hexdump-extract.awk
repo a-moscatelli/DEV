@@ -21,7 +21,10 @@ function isAlpha(ch) { return match(ch, /[[:alpha:]]/) != 0}
 function isDigit(ch) { return match(ch, /[[:digit:]]/) != 0}
 function isBlank(ch) { return match(ch, /[[:blank:]]/) != 0}
 function isPunct(ch) { return match(ch, /[[:punct:]]/) != 0}
-BEGIN {	print "xline" 		"\t"	"linesq"		"\t"	"hex"	 "\t"		"dec"	 	"\t"		"char" 	"\t"	"class"	}
+function isCntrl(ch) { return match(ch, /[[:cntrl:]]/) != 0}		# <32 or 255
+function getClass2(class,ch,hex) { if(class=="alpha" || class=="digit") return class; if(class=="punct") return ch; return "0x" hex } # space & TAB as hex
+
+BEGIN {	print "xline" 		"\t"	"linesq"		"\t"	"hex"	 "\t"		"dec"	 	"\t"		"char" 	"\t"	"class"	"\t"	"class2" }
 NR>=3 && $1 != "CertUtil:" {
 	S0b = substr($0,13,16*3)
 	n=split(S0b, a)
@@ -32,10 +35,10 @@ NR>=3 && $1 != "CertUtil:" {
 		ch = sprintf("%c",dec)
 		if(isAlpha(ch)) class="alpha"; else 
 			if(isDigit(ch)) class="digit"; else
-				if(isBlank(ch)) class="blank"; else	# 32
+				if(isBlank(ch)) class="blank"; else	# 32 and TAB
 					if(isPunct(ch)) class="punct"; else
-						if(dec<32) class="nonPr"; else
+						if(isCntrl(ch)) class="cntrl"; else
 							class="other"
-		printf("%s\t%d\t%s\t%d\t%s\t%s\n", xline, i-1, x, dec, dec<32? "N/P" : ch, class)
+		printf("%s\t%d\t%s\t%d\t%s\t%s\t%s\n", xline, i-1, x, dec, class=="cntrl" ? "N/P" : ch, class, getClass2(class,ch,x))
 	}
 }
