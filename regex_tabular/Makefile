@@ -6,9 +6,11 @@ CERTUTIL_EXE = C:\Windows\System32\certutil.exe
 .PHONY: all
 .PHONY: clean
 
-all: temp-cot.stats.txt temp-cot.succpreds.tsv
+all: temp-cot.stats.txt temp-cot.succpreds.plantuml
 clean:
-	del temp-cot.*
+	del /Q temp-cot.*.txt
+	del /Q temp-cot.*.tsv
+	del /Q temp-cot.*.plantuml
 
 temp-cot.certutil.txt : $(CFTC_COT_infile)
 	$(CERTUTIL_EXE)  "$<"  >  $@
@@ -22,7 +24,7 @@ temp-cot.context.tsv : temp-cot.extract.tsv  awk-certutil-hexdump-add-ctx.awk
 temp-cot.stats.txt : temp-cot.context.tsv  awk-certutil-hexdump-stats.awk
 	gawk.exe -f awk-certutil-hexdump-stats.awk  $<  >  $@
 
-temp-cot.succpreds.tsv : temp-cot.context.tsv  awk-certutil-hexdump-prec-succ.awk
+temp-cot.succpreds.plantuml : temp-cot.context.tsv  awk-certutil-hexdump-prec-succ.awk
 	gawk.exe -f awk-certutil-hexdump-prec-succ.awk  $<  >  $@
 
 # recipes are re-executed also when the awk script is updated.
