@@ -1,0 +1,550 @@
+"ID","CN","CAPT","SRC","OUTERID","SCORE"
+"2db1a805-7a9f-4db7-91ab-2493e3bc62ff","Andorra","Andorra la Vella","GN","48697b15-b3a2-4fd6-87d8-561653c8f24c","11.735428"
+"36f3da46-064f-4924-9f9e-5318673ae3e8","United Arab Emirates","Abu Dhabi","GN","aff0373e-9f46-4697-95f0-c4be15fc4d4e","12.830227"
+"3331d1f2-eb8a-4bd2-adac-af1ac7af7987","Afghanistan","Kabul","GN","64adc0d7-c7e5-412d-a8ab-488ef6c16bf4","9.850367"
+"7d51b4e9-2af8-44c0-8c4d-873e145cd412","Antigua and Barbuda","St. John's","GN","7407b6eb-cb72-4c8e-a41c-6f4ead3b1fe6","10.737005"
+"4c6610bc-654e-43e4-82b6-d3c932dcebf9","Anguilla","The Valley","GN",,
+"74a52413-0ad4-45b2-8c8c-74a434c02273","Albania","Tirana","GN","80ed1db5-95bf-48b7-8ec7-165ef1ac0f5e","9.051057"
+"d29d14c2-d355-4d75-84b0-fbe87e55c243","Armenia","Yerevan","GN","e21b66c4-94e3-4568-b27d-db9d5236b386","9.8091545"
+"004cd88e-e8d0-48ac-9786-dcdcea36771b","Angola","Luanda","GN","6804dbd4-cc4e-4e46-9b6b-329cc8fe05b0","9.8091545"
+"5ca1aacf-f2cd-4c65-b955-14d873c52509","Antarctica",,"GN",,
+"47626b47-7556-45a4-b90d-146d6e66d594","Argentina","Buenos Aires","GN","0a01eaef-e242-4f0d-92ba-7d845d34a7f8","11.034852"
+"878e0b19-e631-449c-a5ce-1fa560bd88ca","American Samoa","Pago Pago","GN","28e0b7ab-7824-4fd6-b196-6eadf8774ea2","15.847451"
+"0474c967-2e50-4abe-bf83-685cf3f1537c","Austria","Vienna","GN","b258168d-9193-4b13-9a61-322e6f77e0d9","9.8091545"
+"ef88da4b-4476-4119-809d-373c34f8d9b2","Australia","Canberra","GN","268b632e-d3fe-4e5a-b825-4279647eda79","8.52935"
+"73291930-5aaf-4ff5-8c72-4d463ef5ef52","Aruba","Oranjestad","GN","c1fed01e-a709-4fa1-9445-1f1771f1eb1b","8.52935"
+"9e8d9f31-6aba-4686-8b81-88e3ffe7cfa0","Ã…land","Mariehamn","GN",,
+"02b98d10-5d88-412b-9976-71e225824bb7","Azerbaijan","Baku","GN","98c8985a-eb98-42d9-804c-1f5b65e2a9b9","8.634249"
+"fdbaa8ac-1f5a-4204-ad0e-6624d3288252","Bosnia and Herzegovina","Sarajevo","GN","0672b3ca-abc2-4bcc-b32a-c2362b66ea57","12.055628"
+"60ed9868-cce8-4736-a41a-a85b147e3322","Barbados","Bridgetown","GN","5e167a7a-53f0-4e73-836a-951ce7eac15b","9.742651"
+"afa8c7bb-2746-49d3-bd4d-938621ab1933","Bangladesh","Dhaka","GN","06caedba-eb6a-49b2-bdc1-468ff7354037","8.634249"
+"949ac8da-cabf-43b8-ab6b-094dc97405a5","Belgium","Brussels","GN","dfd6eaef-aef2-4d55-bd5b-c6cd6ff0a3bc","8.662884"
+"b3aeb637-0567-4eed-aa4f-de8582661eb6","Burkina Faso","Ouagadougou","GN","343346ad-37b8-4341-9143-6d457da28a52","12.172581"
+"571194a3-b352-4e67-8274-fdb609cd40dc","Bulgaria","Sofia","GN","0f987d7a-9c3e-465c-b1d9-90a372025c4b","9.850367"
+"651e639a-5666-495d-865c-42fc5c28692b","Bahrain","Manama","GN","a16c7ad9-277e-40e9-9dec-0ec4609ee5e9","8.636415"
+"1b54c30b-5707-4727-acc2-941ede902020","Burundi","Gitega","GN",,
+"d1df21b6-268b-4a5e-8aee-e677e8e759d1","Benin","Porto-Novo","GN","2eefbc79-8a12-4d3b-88e0-c93aac55209b","9.53792"
+"a008d135-2250-489f-b8d6-61e5c980bb29","Saint BarthÃ©lemy","Gustavia","GN",,
+"d0fc646e-c5bf-46b1-a374-d60109e74bd8","Bermuda","Hamilton","GN","d2a3b921-33db-487e-9acf-af71ad071807","9.713965"
+"8a4fd2bb-61c0-4bd2-9a07-86d4beb6bb4a","Brunei","Bandar Seri Begawan","GN","54c8b6bd-6723-4714-9dc3-c906e7a073fd","10.165029"
+"e6bea6c6-7fe3-4a49-9937-94918fcea166","Bolivia","Sucre","GN",,
+"05ecb5f5-1473-428f-862b-929cd376be68","Bonaire, Sint Eustatius, and Saba",,"GN",,
+"5953fc54-3d2d-4e60-8f84-2c5b746d13a0","Brazil","Brasilia","GN","169ac57f-5b0b-4de6-878f-5b29384e5395","9.850367"
+"0b4b84ec-8b46-435b-ac5a-bc09d9d1a189","Bahamas","Nassau","GN","e4013bb0-d6f3-4858-9f02-4a03d73eaadd","8.294836"
+"389c2159-6ea5-412d-a611-5baec3c41f09","Bhutan","Thimphu","GN","0a060826-8f40-40c1-9a30-c3630aae5fee","8.634249"
+"30a25542-4b41-4c78-97a9-4f19f485e522","Bouvet Island",,"GN",,
+"1a3c6195-6d41-4cc6-83e8-37024623de2b","Botswana","Gaborone","GN","225dea1a-1163-416c-b866-355d5a6dab00","9.713965"
+"3b16d47a-5fc0-4334-8ef0-1531b593ccb6","Belarus","Minsk","GN","41f50371-a1ae-4de5-83a3-913eea3eb9e6","9.850367"
+"e5736961-58c5-4cd2-928d-822ec10ea3b4","Belize","Belmopan","GN","25507b03-4611-4228-a936-0628ec8f54c2","9.713965"
+"5ab65ff7-e04b-4c3c-bc71-077de4be7cb7","Canada","Ottawa","GN","a33b847e-9102-47a6-aecc-7b0069f00d3f","9.815064"
+"5ee7356a-a970-4dae-a267-911bcd8cc866","Cocos (Keeling) Islands","West Island","GN",,
+"0c511442-07cb-4d3c-bc28-e0161afdb2d7","DR Congo","Kinshasa","GN","21059cfa-3a9a-49ce-b142-15ccf9ad363b","7.4842625"
+"9b449b08-1220-4b37-ab2a-3926abc39b03","Central African Republic","Bangui","GN","5c4961f5-a69d-49d5-a968-4afe611719c0","12.095224"
+"fcae3cae-9588-43b8-b52e-9f18c00e30b8","Congo Republic","Brazzaville","GN","097086a3-3c28-4229-b10b-34d730a1839f","8.184242"
+"68d8f181-9967-470d-9698-758c84a6894d","Switzerland","Bern","GN","e96ece58-15d5-40c2-a00e-0992fdec790e","8.636415"
+"80bcddc7-203b-48bd-80ec-307bdd50f14d","Ivory Coast","Yamoussoukro","GN",,
+"d4202cb9-ab6d-43fd-affc-b947536e7068","Cook Islands","Avarua","GN",,
+"25aff01f-be63-4eed-abf7-48314b177ac7","Chile","Santiago","GN","d2616a40-4d24-4523-9707-af7dd60c146d","9.8091545"
+"4e0058b7-7c5f-4cb1-913c-ea4b525bcb76","Cameroon","Yaounde","GN","7bcbcc6b-1e2c-4ba5-ba54-d118b3933639","9.742651"
+"2799552b-f5b7-4610-9502-beb0b43beb0e","China","Beijing","GN","ddba2b41-927b-4c23-bc66-6cd0b0e62922","9.742651"
+"ecce51fd-2c36-4c34-a905-448ee5ead261","Colombia","Bogota","GN","b364c0ee-d385-4398-bb01-bf141e0e63db","9.713965"
+"e3f21d68-fb03-4234-a4a6-333e76fdbc0f","Costa Rica","San Jose","GN",,
+"8f08a3e0-8a27-40f9-ad77-dd99b4cebd52","Cuba","Havana","GN","9aaf7520-1d02-4dab-95e2-d314ca13e99d","9.8091545"
+"8333ea63-ca17-4a96-8a37-09d82dbd497c","Cabo Verde","Praia","GN","46bb2f73-2d33-4810-bc9b-5eb8acd3f1e1","12.070482"
+"1fa2392a-bd28-4c04-bcd6-0fa1c0c2109c","CuraÃ§ao","Willemstad","GN",,
+"5d62bee4-c89b-4bce-8c67-de06d375e97d","Christmas Island","Flying Fish Cove","GN",,
+"8cfecd7c-ae48-48da-8d8a-cf4a4dffa237","Cyprus","Nicosia","GN","c863a931-ea51-4067-95d8-26a18c2e61f8","9.713965"
+"0d2d10a5-3f76-448e-88b7-e30e742d25a2","Czechia","Prague","GN","42607ae3-097a-45bf-9419-8f77a2b062d4","9.815064"
+"e6b7b4ff-a345-43f1-b1d5-9ccefd04199d","Germany","Berlin","GN","de332e4a-3856-49cb-ae78-34acee6efb4f","9.713965"
+"f5bfcc77-3e9e-40f5-b767-86e726f49fff","Djibouti","Djibouti","GN","8857012e-00f5-440c-a93d-1e8588283332","9.8091545"
+"1bdd32dd-660c-4041-81ba-ed73690f2bbd","Denmark","Copenhagen","GN","3445641d-1c97-4c96-962c-77aefeab511f","8.634249"
+"f85fe97f-a982-4e5a-adac-db45e1e68c89","Dominica","Roseau","GN","97d97afc-ea87-4b03-87de-66e35ec3cd0e","9.850367"
+"d6b0852e-cfe6-41a3-b538-8d2733da16e8","Dominican Republic","Santo Domingo","GN","06eda4f2-3883-4f46-bafe-373e57fa3de6","11.00905"
+"f706842c-97c0-4bcd-b1ee-7f2440043f67","Algeria","Algiers","GN","3e6f874d-fa07-4796-a611-3220643a35ad","8.662884"
+"eb93d401-e1fa-4703-81c7-a343d326bcfb","Ecuador","Quito","GN","07396c2c-0498-4228-930a-d48bf0482892","9.713965"
+"be6ee77c-23d2-44c2-ba2c-3a2d888a1ad9","Estonia","Tallinn","GN","68dad536-a548-47a6-8803-a705232b178d","9.713965"
+"c32b05a9-8424-48dd-b8f1-332628fd9b97","Egypt","Cairo","GN","5a2bfcb3-89de-4e9b-8eea-7f6fc736150b","6.461259"
+"1f5e15d8-bade-448b-bf44-5cd88eba950e","Western Sahara","El-Aaiun","GN",,
+"5b2e87df-38bc-4483-8f50-e29fbfa109b4","Eritrea","Asmara","GN","a63016d1-77ab-4783-a86b-9b64330cd5e5","8.634249"
+"9380040b-83cf-4ea9-a4d0-4e784fa4af23","Spain","Madrid","GN","80dafb77-bbe1-47d1-9e3a-42f6bac86b1c","9.815064"
+"74d660dd-d0ee-4ea8-a9c3-e0b9ab6eea3d","Ethiopia","Addis Ababa","GN","d94ebebb-7873-482e-a1cc-0d7648de2f32","10.804352"
+"d8dbd874-2b57-4495-b26d-07a62a13c2c2","Finland","Helsinki","GN","dad4f95c-b86e-4c1c-9bec-a95edc669588","9.850367"
+"36c85440-34d2-43cc-8e0f-2eb66a536076","Fiji","Suva","GN","94f539de-b978-4b5e-bde0-877edb8718f0","9.742651"
+"f6e683b6-3e6f-4d07-b600-d525c312aa9b","Falkland Islands","Stanley","GN",,
+"433ed108-e70b-4050-b4c0-1a0e9dba01d4","Micronesia","Palikir","GN","b04cdc9a-6f31-46a3-83a4-53d14c825137","7.423073"
+"0721fab5-219a-4b3e-aec6-2ad4a9717732","Faroe Islands","Torshavn","GN","982ebc39-f8c1-4f24-8f2d-8d998c94208b","11.577435"
+"0b45cbd9-0166-4883-afbc-6929bf17a06b","France","Paris","GN","c076b60b-1cd3-428f-a257-749e0a49b95b","9.815064"
+"92874a1a-1821-4064-a8e2-a424b5dd874d","Gabon","Libreville","GN","d0c524a3-8d3d-4784-98dd-3fbc15e9281a","9.815064"
+"378b9d35-7309-4b09-bce1-f5efdc79a383","United Kingdom","London","GN","21384c6e-b74a-415d-928e-06b2b48a7c4d","10.054983"
+"02c9880c-c024-425d-a353-ead89378ae72","Grenada","St. George's","GN","09ea5102-0d77-4900-9e47-d5210b413c73","7.13265"
+"cdafbf73-a601-414e-a76b-784c999a302c","Georgia","Tbilisi","GN","ce0860e7-8cfd-440f-8797-3c349d1193aa","8.636415"
+"71cbe246-e73b-4c71-ace9-7d1bd2d92240","French Guiana","Cayenne","GN",,
+"0e5c0a9f-7ab4-49c0-a58e-edfdcd2dbcac","Guernsey","St Peter Port","GN",,
+"29268621-47bc-4949-8ab8-3c784723981b","Ghana","Accra","GN","f2e81338-870c-42e0-ac79-a221fa2bf5ab","8.53639"
+"059ff527-dcb4-4e09-8dbb-7cc59d323181","Gibraltar","Gibraltar","GN",,
+"efbf7b38-7be5-4112-b828-7bb699e128a8","Greenland","Nuuk","GN","3b9d018b-b251-45e7-8321-7a0e63b3cfa2","8.636415"
+"fb505c7a-825e-4bf8-8145-8eb096d1eb21","The Gambia","Banjul","GN","8d33f5d9-1a7e-43e4-8c89-3ad729936cbf","11.051285"
+"676b982e-c145-4804-bd84-3e85a1f507c1","Guinea","Conakry","GN","81376713-a5a9-4f16-bb4e-738fcb202b77","9.713965"
+"8497598f-6357-4960-ba89-1924ef86ba68","Guadeloupe","Basse-Terre","GN",,
+"af5a552f-8e67-42bb-8337-ad7e1dd7b0d3","Equatorial Guinea","Malabo","GN","48ee19ad-d6b1-4e6e-9373-ce4afe386c4f","11.297745"
+"8cfae5ce-1c37-44b6-9b43-85b751267022","Greece","Athens","GN","c32fc676-f303-42b9-b499-7e418ea0d89a","9.713965"
+"08e5af9b-6dc5-4c82-a97c-f3981d4883f4","South Georgia and South Sandwich Islands","Grytviken","GN",,
+"bc9168dc-b220-4f32-85ea-6d439bfd2ea6","Guatemala","Guatemala City","GN","1ff8fead-3199-4940-81a1-9c3bb91bccd3","10.692823"
+"a9d4e339-509d-41d4-a6c5-d4494ffacc51","Guam","Hagatna","GN","d89c1406-576c-4a92-959a-2baffc4f9d83","7.3523016"
+"ddb6908e-b03c-4ff5-96b3-4ae4cc117b88","Guinea-Bissau","Bissau","GN","4ace6864-35b9-4e14-aa9a-d80d334408b4","11.393618"
+"68b771a0-cc61-4c7e-97a1-ccdde3b44db3","Guyana","Georgetown","GN","7d956e9e-8cc0-4d36-8962-0e4782444f36","9.850367"
+"608f968a-cccd-4e79-9545-4192c28a5f8c","Hong Kong","Hong Kong","GN",,
+"cc7b70f6-1b2e-4d53-9e0d-21d5aab61f0c","Heard and McDonald Islands",,"GN",,
+"b6a6a5c9-bcdd-46c6-ac41-93a8106fa8ce","Honduras","Tegucigalpa","GN","8ed539c2-a2c1-439b-8473-1cb9ea2ff67b","9.8091545"
+"b419bdab-6c37-4897-99d4-9255d723b676","Croatia","Zagreb","GN","b08b3940-747a-42f6-8b8c-f5d396c66097","9.850367"
+"3f52afe3-2d5e-4f8e-bf4d-ca191cad12f7","Haiti","Port-au-Prince","GN","6387b599-24ae-45f8-8639-78a55a9a97eb","11.236521"
+"0686c16e-2c5f-470c-a46e-80ed47340083","Hungary","Budapest","GN","5e7ee3bb-10f8-4031-8bce-6554a1ae3a1d","9.8091545"
+"cf9a0021-3b08-44a6-98b6-d4eb5f61c0de","Indonesia","Jakarta","GN","949d7dd3-62b1-4bf8-a795-8f7b7b9eddf7","9.850367"
+"3b9b421b-d704-4902-bbbc-e12dab9cb17d","Ireland","Dublin","GN","39a3effc-2b0b-4906-856d-69fa5f5077ed","9.713965"
+"c9d86d89-32bf-4de5-9987-3ed4b2636cb9","Israel","Jerusalem","GN",,
+"7d88b1d8-7ce0-4494-bea6-6090b6fc3841","Isle of Man","Douglas","GN","54bb44d2-f265-4b8a-bea3-416abe7c39ee","11.98574"
+"a219e934-dc35-440c-86b4-b42e3b99c35e","India","New Delhi","GN","d343053d-f6c0-4906-a633-bd82605a84af","10.804352"
+"6e08bab6-6c8f-428c-975e-50b5860f9321","British Indian Ocean Territory","Diego Garcia","GN",,
+"a1c756bc-bac6-4e32-aa29-a12f932b9397","Iraq","Baghdad","GN","e32dd56f-1e54-4d41-8449-89aa39bc7c50","9.815064"
+"687c746a-ec70-406e-a956-b18e61d73fb9","Iran","Tehran","GN","f53cd91d-63e4-480b-af47-2b7c941d081f","7.359382"
+"188ea569-272a-45f6-a8ec-15a0ca3712fd","Iceland","Reykjavik","GN","47787fc8-d07f-4c15-82b9-49794031988f","8.662884"
+"f4201294-e4b3-4162-b5d3-cc1e88cb1117","Italy","Rome","GN","f0096b6d-5cc9-4035-ad9e-9c4f22a2110d","9.8091545"
+"bd7e6f62-549b-46da-9731-50dd5b12f848","Jersey","Saint Helier","GN",,
+"655daf78-0a0a-45f3-b6be-781072f9f98f","Jamaica","Kingston","GN","6894c40b-5c42-4854-b256-d2d8bb70e35f","9.305065"
+"63754195-aab9-47f6-8df3-9bf37615fe04","Jordan","Amman","GN","dc1d9400-e825-43ce-acd5-f2ebe2a10534","9.8091545"
+"11ff3ee7-0f53-4add-9882-6608d5bd0017","Japan","Tokyo","GN","484962aa-5c8c-4f68-b571-91d5b67c8f2b","9.850367"
+"6fea5711-d095-41b1-85d5-3e0e905a2711","Kenya","Nairobi","GN","10eca445-9fde-474f-ab37-77159d5fc676","9.742651"
+"ea863d7d-30db-4a78-87c1-86437076a2c7","Kyrgyzstan","Bishkek","GN",,
+"0206b51a-1e43-4a74-b979-4e87031a83a6","Cambodia","Phnom Penh","GN","7e262b41-7535-4bb2-9fdd-4ae5e7f2dc23","11.034852"
+"d5dc3073-f833-4169-a986-ad8e43753dd9","Kiribati","Tarawa","GN","26bcbff7-d834-4b8a-96de-b7b030a11209","8.634249"
+"2e34127d-8c93-4e8a-8eb9-cd5dbe48ee45","Comoros","Moroni","GN","f005d914-78d1-4c74-8461-a6ed8a548d0c","9.850367"
+"2f9dfe94-7e3e-44f9-a81a-d314081ec90b","St Kitts and Nevis","Basseterre","GN","40e2e60a-96e7-48ff-952a-fac663a78563","14.601131"
+"f4fdfe51-a8b2-453b-9fa5-e27777d0c9d8","North Korea","Pyongyang","GN","ed1be6ae-3571-4703-848c-afb25d37596d","7.1217413"
+"f905b3e5-9654-4d9e-a6da-df3a51504cc5","South Korea","Seoul","GN","5a8d74d6-c25e-4845-857a-f2b371969e64","7.8365097"
+"4a737cd0-f33f-4457-a9a4-823db515d612","Kuwait","Kuwait City","GN","952b6a91-748f-4b3b-9099-4091044993c0","9.53792"
+"b161850b-f2e0-46eb-9e56-af5d5364c2f2","Cayman Islands","George Town","GN",,
+"bfc556cb-050a-44cb-bf5a-8f293431429c","Kazakhstan","Nur-Sultan","GN",,
+"b083df9e-69dc-4b23-9707-348da2064f34","Laos","Vientiane","GN","5c08b706-ee02-4144-99c5-4eb100539580","6.975851"
+"93b77ab6-8e8a-4603-8e97-4b6f2be8f9bb","Lebanon","Beirut","GN","b242f7c4-c849-49f2-a0b6-30829ca4ca48","9.742651"
+"5a42cd20-d43b-4a2a-aa9a-e354d875dcd0","Saint Lucia","Castries","GN","de59cf0c-f428-4b32-af19-aec0c1f4021b","8.184242"
+"4c4f2407-f2b2-4b29-9004-3a804c3b069e","Liechtenstein","Vaduz","GN","1d30635a-470d-43b1-bc82-33e02336fa77","8.636415"
+"6931af56-d118-4f7a-b668-58b23c3631e1","Sri Lanka","Colombo","GN","9e8a4c9f-5f58-4bcd-a467-a0429cfd7e68","10.411401"
+"e4b42a95-089a-401a-9b26-7f433fad2fcb","Liberia","Monrovia","GN","efaf3f93-7fa7-4279-9cfc-59a3a7126b03","9.713965"
+"66434403-6270-4baa-b4ba-cc31d844bd69","Lesotho","Maseru","GN","bb054350-c913-4bc4-8b62-7f128503ed56","8.52935"
+"c50665a1-c35a-404f-aa54-11b5a2d2b26a","Lithuania","Vilnius","GN","e8bb058a-9606-48e8-979a-a6828eaee996","9.8091545"
+"16240f19-db9d-453d-8123-725eeb731d74","Luxembourg","Luxembourg","GN","af78f7bf-c17f-43f6-babf-b4f987c760da","9.850367"
+"62625c12-d636-4384-8d18-2bd72592f9be","Latvia","Riga","GN","fb1d0063-6b76-400a-a44b-7a48ff3c500e","9.8091545"
+"9f4b0f9a-53a8-4239-b856-6798de18d7d5","Libya","Tripoli","GN","e44e9572-ad2e-49de-b4d9-ffefb5405bd1","8.53639"
+"0a0b79b1-fd51-4574-bb48-17e5c380ea16","Morocco","Rabat","GN","42ad1d00-72a7-442a-95c4-1c5811a5ea35","8.53639"
+"b1b0c57c-ea09-49e8-8786-2bc2466f032e","Monaco","Monaco","GN","62e741c8-ba95-4e0e-bfad-d0428b66ba20","9.8091545"
+"dab9f865-8a4d-4783-bd73-6e7458798354","Moldova","Chisinau","GN","54d279f3-c052-4449-bede-27a976cc6968","9.8091545"
+"00ecf711-9a1c-4702-a16b-e5dd2812c03c","Montenegro","Podgorica","GN","ccb6de8d-9dcc-449f-928a-a9354ffa46c5","9.8091545"
+"bc24e3ee-4749-4147-977c-7245095f36e0","Saint Martin","Marigot","GN",,
+"5dabe25b-9588-400f-98a0-e1ba68f374e7","Madagascar","Antananarivo","GN","bf250e5e-3402-4c3d-8e97-f0143f6cd038","9.713965"
+"c2e92b23-e809-40a2-bb77-30446fc24a9a","Marshall Islands","Majuro","GN","d8655cdf-4696-48fa-ab37-f7f0eb0d3ead","10.596247"
+"7780309b-0cf7-443e-b1bb-97e34eb3b75f","North Macedonia","Skopje","GN","8d1c16da-216b-4833-afe4-c91878fd65d5","10.037296"
+"cb8adec6-0030-45fa-9eb6-68d45132337d","Mali","Bamako","GN","6b541e30-4f97-4c19-ab3a-431aa246cdb3","8.53639"
+"841df556-0acd-4ce5-bdcd-20016d9e254e","Myanmar","Nay Pyi Taw","GN",,
+"6b970c8c-3c4a-40c1-b760-f322e86fbb32","Mongolia","Ulaanbaatar","GN","dc03a83a-e30d-4646-b22a-0571e38c30a9","8.53639"
+"321fe508-a2a5-4c14-8888-ae8a6ff213d8","Macao","Macao","GN",,
+"60aa7b9e-0c3a-4af0-ac5e-27e21cc48b79","Northern Mariana Islands","Saipan","GN","84ee5b5a-a8a4-4e89-8f27-cd9c596ddf71","12.606565"
+"165eef67-c875-4416-a005-1ef1b85f0d1e","Martinique","Fort-de-France","GN",,
+"a79dd5f5-2c52-4a3a-9d48-84436c8917c1","Mauritania","Nouakchott","GN","9937abf3-fec7-4fa2-a8b9-38aecb57766a","9.815064"
+"f81d10ed-611f-4000-b3d4-7733c14184e8","Montserrat","Plymouth","GN",,
+"80d98497-5713-43a6-ba42-1173a7b0cbeb","Malta","Valletta","GN","5cb7e9f0-f4cd-4f94-a271-8de3a13aafac","9.8091545"
+"539fd0cc-63a5-490e-9827-a6c4d35b74ab","Mauritius","Port Louis","GN","d09227d9-babe-4efc-a50c-182eb3db1cdc","10.276721"
+"24951d89-ca73-4b24-b16a-f055b512dafb","Maldives","Male","GN","a166ef7d-3367-436a-a676-9fbf321e7870","9.713965"
+"4d7959f8-a9aa-44f6-83ca-ad36877b6916","Malawi","Lilongwe","GN","d1386d54-d744-409c-a996-c678f441cf2a","8.634249"
+"b7557a48-8ff7-4597-9f16-fb3940a29b31","Mexico","Mexico City","GN","97f5eab3-44b5-4752-b047-f57c95473b24","11.034852"
+"cd259ea1-ac63-4e0e-b206-0649f2c41bbd","Malaysia","Kuala Lumpur","GN","1fbd10d5-9735-4fb2-b78a-793d475e040b","11.104156"
+"9324ab3a-636a-4d8a-b577-0e8cdbdfceb2","Mozambique","Maputo","GN","97c03c5f-8935-4a0c-ae45-634937383bf9","9.850367"
+"bf7085cf-1109-4631-b472-fc2057334b5f","Namibia","Windhoek","GN","4747b1bf-edd0-4714-96ee-44f7b868e187","9.8091545"
+"15366684-d263-403c-afce-cba603ed2926","New Caledonia","Noumea","GN","1d91d6c9-8572-41a6-b4dd-3af49ddd18e2","11.267039"
+"05987022-c3ee-45d2-8397-b09d2bb96ec9","Niger","Niamey","GN","7d901db8-c083-4f8c-90ab-5bef8833a916","9.815064"
+"74faae8d-73ce-4f55-8165-cbb8310428c3","Norfolk Island","Kingston","GN",,
+"12c79ed8-427f-4fa6-8db2-1e060bec914c","Nigeria","Abuja","GN","f2ed24a1-89bc-4ed7-b664-97ed508728ad","9.208185"
+"ac9c55c2-f7a7-4e41-97fd-917b9077f7b3","Nicaragua","Managua","GN","705f816c-effd-4dd2-9384-641ea7cc93c2","9.253219"
+"8dc66505-daac-4296-9b48-6f8ee5a2e21f","Netherlands","Amsterdam","GN","b6af346b-7b5a-4bca-af13-1d240b7813b2","9.8091545"
+"be29a753-5c72-48ac-9c45-9e09800909dd","Norway","Oslo","GN","2727449f-e5e9-4d01-a492-8b5debc8fc02","9.713965"
+"ddeb215f-71c4-4158-a585-deb7c129dde2","Nepal","Kathmandu","GN","8e6037d2-5f20-4301-a236-98614ae0a26d","9.742651"
+"1cfee937-d42f-4945-a5b9-39bfcfb9bfd0","Nauru","Yaren","GN","ae9832a2-4cac-473e-aa6d-fb03d9f3c637","8.197539"
+"d5d5ed64-b015-4708-8ebb-e08c5243cb53","Niue","Alofi","GN",,
+"0eff60f2-bf27-4697-83db-4db704533d46","New Zealand","Wellington","GN","2d72b838-32cc-4589-bc7b-01806714def6","12.036737"
+"bbd69be2-66f4-4fd1-a20a-9584c396b242","Oman","Muscat","GN","4f05380e-66f7-4219-87c2-c0140b11cf67","8.634249"
+"2be2ba12-aee6-46b3-84e9-b86816b998fe","Panama","Panama City","GN","4374a8fd-351b-462a-99c3-6dd8e80177ef","10.804352"
+"1231f30d-5e25-43f7-813c-f4712a1de949","Peru","Lima","GN","74c0e65c-f593-4f8f-9c87-650a1d1e06f2","9.742651"
+"d7b27bf7-182c-4b67-b101-99e6f8bef26d","French Polynesia","Papeete","GN","a30972d1-be8a-44dc-a580-6602c461296a","10.183249"
+"b0091827-b130-4480-94a9-52ddbd6101dd","Papua New Guinea","Port Moresby","GN","efa12ecc-e574-43c2-aaba-08bf43f5465e","13.08124"
+"3c34811b-914d-44f7-bd41-9c7e6640ee64","Philippines","Manila","GN","252db764-7079-4b08-97eb-db2736a9c6b5","9.815064"
+"97a05d15-f457-4035-818a-3e8a4ac34564","Pakistan","Islamabad","GN","b87a714f-ace8-44c5-bbf6-8a49ae27cdef","9.850367"
+"03829e24-efa2-4706-a753-f0c4b99edacd","Poland","Warsaw","GN","a1a41fab-4905-479b-9303-d81591ea6152","9.850367"
+"2cafceef-6043-4dd7-9e33-480a39776dff","Saint Pierre and Miquelon","Saint-Pierre","GN","7407b6eb-cb72-4c8e-a41c-6f4ead3b1fe6","4.8005366"
+"29ca0121-993d-4ee9-8e7a-e0befe845baf","Pitcairn Islands","Adamstown","GN",,
+"dd30faa4-2981-4080-95bc-24e9901fd34e","Puerto Rico","San Juan","GN",,
+"c20949a3-ddbc-448b-97aa-695dd876a142","Palestine","East Jerusalem","GN",,
+"a33e7db3-adae-4191-8df9-2d2bed497b1b","Portugal","Lisbon","GN","9f0fe989-cfc8-41a0-b834-9fa254227667","9.815064"
+"e158d535-1830-4e1f-a822-3b63cc9676ee","Palau","Melekeok","GN",,
+"381fc13c-5498-4d13-a470-b88c55ae2ab9","Paraguay","Asuncion","GN","0acbbe96-6b72-4150-998a-c667bd595cb9","9.742651"
+"0fbd6908-4318-46ce-9db9-7fe0b231f21c","Qatar","Doha","GN","5b00aaea-5fe1-45ff-a1f7-0a3882fd8b18","9.742651"
+"c94c8735-5947-42e1-8b36-c82c09aeea83","RÃ©union","Saint-Denis","GN",,
+"262e29a1-3249-4ade-83ea-35a1f8fb8911","Romania","Bucharest","GN","36639c99-958e-4229-8b31-dc8a6bbc4b19","9.815064"
+"0680591c-5ae6-47da-aaa3-0a4c4280245a","Serbia","Belgrade","GN","5c06c6db-debb-4adf-870e-f964f75f4b20","8.662884"
+"b4e72a81-7cc4-4914-8b6b-220bbc28ba90","Russia","Moscow","GN","a9e0f141-811a-48bd-8f55-7f948871edac","7.5217957"
+"9acb161c-30d4-4273-81ea-fa0ded5887b6","Rwanda","Kigali","GN","f5c0ee5d-badf-4bd6-80fc-1a980b67a4ae","9.742651"
+"b4191d93-b8f6-4eef-ad9a-77ba52d8ee5c","Saudi Arabia","Riyadh","GN","c679f866-fd07-4c01-80e3-a3ffdb249c47","12.172581"
+"9d556840-7c49-4ed0-a500-ea8d82dbf64c","Solomon Islands","Honiara","GN","90b6031c-df99-4f7f-91f1-1b81c47e0aec","10.602672"
+"0b8f6564-62c9-4a05-af89-7f60a9241241","Seychelles","Victoria","GN","339d8d5c-b3fb-4dfa-bd2d-1ac57757f18e","9.8091545"
+"b9667b10-28eb-4880-932d-e5a514ffbb2c","Sudan","Khartoum","GN","2e8b5f81-0e77-4026-8342-cba3f3729d74","9.850367"
+"66ddd3e7-8136-4faa-9987-f2e0c714a3ea","Sweden","Stockholm","GN","3330e688-cf35-4650-a6ba-ab8eedc8b107","9.8091545"
+"f32782c5-f38d-4cd0-8bcd-a2b1c4596f8c","Singapore","Singapore","GN","ade64f81-28b0-482b-ba72-e698022290db","9.815064"
+"246d58ef-f7ac-482a-8708-525870ea8242","Saint Helena","Jamestown","GN",,
+"cee1916c-6336-4054-8183-fc7e60c237f2","Slovenia","Ljubljana","GN","6e767989-3d22-4bcb-a969-8faf18585272","9.713965"
+"1f41a604-5c82-4aff-bf9a-0d050c8b9ba7","Svalbard and Jan Mayen","Longyearbyen","GN",,
+"d3c7c67f-28a4-4f7f-9d68-49aadc7dc48d","Slovakia","Bratislava","GN","8496c57c-6fef-4a49-86df-67584cba84e7","6.8768044"
+"1711cd1f-4592-4cf0-8ddd-db18f4dfe887","Sierra Leone","Freetown","GN","85b86518-b0b7-4814-bc35-dbf9b900d20e","10.583485"
+"51c21afa-7ded-4f19-82c9-5026b7996066","San Marino","San Marino","GN",,
+"0b2a529a-db81-498a-996f-dc540f495e99","Senegal","Dakar","GN","8ca01693-05f1-489d-911f-bb9bfe8f9d46","9.850367"
+"c1b9a296-3ab5-4a71-9113-942a5ff32b53","Somalia","Mogadishu","GN","96c140e3-ee5a-4d50-a6b3-8bccb000350d","9.713965"
+"7472f744-f211-4693-bfe8-b2601bfc7341","Suriname","Paramaribo","GN","2472e3b4-4dfa-4053-b3e4-81889220eb01","9.713965"
+"23d534f5-e87c-4c38-8f39-34a16bb68182","South Sudan","Juba","GN","aa2098c3-987d-4dff-b359-b25bb3309a1a","11.563961"
+"afafc9f9-7b48-4ede-921e-d0fe5e44bff6","SÃ£o TomÃ© and PrÃ­ncipe","Sao Tome","GN","e9073d2f-5586-48eb-bde2-150bc9cd2cef","11.448763"
+"b22e1e6f-9845-4768-9a7d-577e628684d5","El Salvador","San Salvador","GN","774998ef-959e-49fe-b97d-da671d747719","12.7852"
+"6ceeef40-e9ff-4550-a80e-54d5c3bb6b5b","Sint Maarten","Philipsburg","GN","a4b7169b-fd33-48e5-a3c6-838f0e1d3dac","10.551434"
+"8802311e-dc1e-475a-89a3-4fc03f1e54cf","Syria","Damascus","GN","b2a9ac5c-9700-4059-b9db-3e22c4dd3c14","6.811809"
+"15feda85-e4f1-4c2c-b42e-fb63a06d6ffe","Eswatini","Mbabane","GN","62d87b5d-b388-49f9-b2d4-b1487f3c87fa","9.742651"
+"200f931f-0589-4cba-b6b3-24f1ffe44460","Turks and Caicos Islands","Cockburn Town","GN",,
+"b703a5c7-c1da-4de1-9bc0-1b1b0684a263","Chad","N'Djamena","GN","dd29c348-4e2a-4d6f-9384-93311f09db91","9.713965"
+"f4f1d699-f5f8-4056-8ea7-05850c9afbda","French Southern Territories","Port-aux-Francais","GN",,
+"32c6907e-a22e-41e8-82fe-f8271bcf53e7","Togo","Lome","GN","a63cade3-2903-4984-977f-bb13e99af70d","9.8091545"
+"273818ce-da20-4b12-82be-e30dfc2a8bcf","Thailand","Bangkok","GN","cbb5c74c-3e74-4e30-ba8c-69f5c00ca68a","8.662884"
+"4049982c-0803-4bb5-9841-591818c8e5f6","Tajikistan","Dushanbe","GN","d96c4274-7986-4ea2-b184-ad250d8ff09a","9.8091545"
+"c26163e1-22be-41a5-9fc8-b4274b714d2c","Tokelau",,"GN",,
+"7231eaa5-51a0-4f1a-a2a4-a49d99408edb","Timor-Leste","Dili","GN","985ea1d4-c0d3-4e93-827e-a7483f626844","12.070482"
+"3ce9498e-7a30-4e87-971b-d6acbb13e177","Turkmenistan","Ashgabat","GN","faa7f7d0-c6d4-4ef4-9ef4-5eb8fc8f293d","9.8091545"
+"4b8368bb-f9af-4f17-ac2f-b4d0ddd43683","Tunisia","Tunis","GN","9c443ca7-492c-4cb5-894b-cc2e08ff7b0b","9.8091545"
+"bac43918-fc40-412c-a490-f5d9ad80eff1","Tonga","Nuku'alofa","GN","58947008-5e38-4611-8970-601f88498aa9","9.713965"
+"2e6a8c9a-5d3a-4ead-b152-ef46a00cc4b9","Turkey","Ankara","GN","1ab9f68b-d2a8-40fe-a4f2-ff6a0d6fce8c","8.055631"
+"057ef4d7-c7b1-46c8-95d1-b2e78f7218ea","Trinidad and Tobago","Port of Spain","GN","74471832-ed4a-426e-a2eb-fd1070c5da79","13.549498"
+"98972fdf-2081-4ef9-9a05-7bbdd53cfb58","Tuvalu","Funafuti","GN","1cb348c3-e728-4f52-822a-39d1419c0ebe","9.850367"
+"29a31976-2144-46fe-aa3a-ca2f48ac9dee","Taiwan","Taipei","GN",,
+"7f9d1710-1804-4af0-b436-1eadfc259516","Tanzania","Dodoma","GN","95f25dd7-15f3-49b5-88cd-c6b2d180e06d","8.634249"
+"9b2aa993-da74-467b-9a81-666ea4b42c62","Ukraine","Kyiv","GN",,
+"59efbdbe-0210-4700-ba23-1f77ae3195bc","Uganda","Kampala","GN","3a22e246-5400-4d0d-96a3-3637c3eed864","9.815064"
+"53664153-c530-4296-a867-3fefbaf37fdd","U.S. Outlying Islands",,"GN",,
+"31dcb683-b923-4da8-84e4-e58e2286e751","United States","Washington","GN","2a497256-caa4-4cfe-a2da-f6af446fad6c","8.348709"
+"618a8eb7-a2b6-4036-8221-f206aec1fb0e","Uruguay","Montevideo","GN","24d82e32-aa90-4d6c-b077-0680b5fd6de7","9.8091545"
+"0273a6d4-ef86-4777-acdf-8c5beef1a0d8","Uzbekistan","Tashkent","GN","bd2bfb08-0674-49e3-a2ac-9f6def558b05","9.713965"
+"e427b5d7-b6fb-4db2-aa87-1d0b7b0bd005","Vatican City","Vatican City","GN",,
+"82015770-b7b6-46f5-94be-895104aa5320","St Vincent and Grenadines","Kingstown","GN","9be800ed-a25a-429b-8d5d-7707a0753ea1","11.783756"
+"7fe9e861-085e-4f36-8b93-470403509e93","Venezuela","Caracas","GN","e1c6522c-6d59-4904-93bf-a111b7c9a50c","8.166787"
+"e4cf05d3-8259-4cd3-9750-b31285f77ea8","British Virgin Islands","Road Town","GN",,
+"6cd56497-0a07-4d34-a5f6-440b3d4543c5","U.S. Virgin Islands","Charlotte Amalie","GN","c366afa6-5397-4188-a172-a2815ee4efc2","13.68894"
+"813ccb56-4014-45eb-a07e-2d3f029211ce","Vietnam","Hanoi","GN","83a4eadb-1c0a-4208-a6c7-ea8fc2b4632a","8.634249"
+"7b390e81-cab1-4794-b154-2b4f68b54e72","Vanuatu","Port Vila","GN","fb1a1750-39f4-4139-8b7a-94687c0bdfc1","10.455341"
+"ad938285-630d-448f-aa65-bfe0cf329b7c","Wallis and Futuna","Mata Utu","GN",,
+"9fc364cd-cc13-4f21-9103-83082252a2d5","Samoa","Apia","GN","ddcbadee-c508-47ae-a805-16175f9159b2","9.8091545"
+"7e846e49-3a5f-418d-bfaf-31b11a7faade","Kosovo","Pristina","GN","b504738f-fe4a-4ad2-8a88-5237643e6d32","9.742651"
+"17f13415-0ca5-445e-8d92-a9cd1f547eab","Yemen","Sanaa","GN","8d74ba26-125b-480b-aeb1-df9ca924f326","7.3412075"
+"2eff59cb-a28e-436e-90fc-af8169dcc6ef","Mayotte","Mamoudzou","GN",,
+"8403238e-a078-43a5-82b3-90fbc572ad81","South Africa","Pretoria","GN","ef05e7bf-3f51-4cfb-af9f-44a66ccaf3cd","10.028585"
+"3970bf27-9395-48fb-8815-d49a35553ffc","Zambia","Lusaka","GN","5c0036c6-9e9d-48c0-b851-1f35c6689c00","9.713965"
+"baf37fce-3ee5-4907-ae43-f480dad7597f","Zimbabwe","Harare","GN","69a3edba-727e-4ff7-bb71-a2f1fcd91abd","9.8091545"
+"c1fed01e-a709-4fa1-9445-1f1771f1eb1b","Aruba","Oranjestad","WB","73291930-5aaf-4ff5-8c72-4d463ef5ef52","8.30104"
+"56f3a207-e779-41bb-abac-3a9c4a82dd80","Africa Eastern and Southern","","WB",,
+"64adc0d7-c7e5-412d-a8ab-488ef6c16bf4","Afghanistan","Kabul","WB","3331d1f2-eb8a-4bd2-adac-af1ac7af7987","9.502977"
+"c52eba34-0199-4f90-b079-1ced41af53b0","Africa","","WB",,
+"d109ea90-6077-4820-ac5b-2cdd9b8427ee","Africa Western and Central","","WB",,
+"6804dbd4-cc4e-4e46-9b6b-329cc8fe05b0","Angola","Luanda","WB","004cd88e-e8d0-48ac-9786-dcdcea36771b","9.738627"
+"80ed1db5-95bf-48b7-8ec7-165ef1ac0f5e","Albania","Tirane","WB","74a52413-0ad4-45b2-8c8c-74a434c02273","9.053877"
+"48697b15-b3a2-4fd6-87d8-561653c8f24c","Andorra","Andorra la Vella","WB","2db1a805-7a9f-4db7-91ab-2493e3bc62ff","11.699078"
+"483795f4-0a24-49c5-90ae-7fa127c4781d","Arab World","","WB",,
+"aff0373e-9f46-4697-95f0-c4be15fc4d4e","United Arab Emirates","Abu Dhabi","WB","36f3da46-064f-4924-9f9e-5318673ae3e8","12.800434"
+"0a01eaef-e242-4f0d-92ba-7d845d34a7f8","Argentina","Buenos Aires","WB","47626b47-7556-45a4-b90d-146d6e66d594","10.926487"
+"e21b66c4-94e3-4568-b27d-db9d5236b386","Armenia","Yerevan","WB","d29d14c2-d355-4d75-84b0-fbe87e55c243","9.794945"
+"28e0b7ab-7824-4fd6-b196-6eadf8774ea2","American Samoa","Pago Pago","WB","878e0b19-e631-449c-a5ce-1fa560bd88ca","14.772074"
+"7407b6eb-cb72-4c8e-a41c-6f4ead3b1fe6","Antigua and Barbuda","Saint John's","WB",,
+"268b632e-d3fe-4e5a-b825-4279647eda79","Australia","Canberra","WB","ef88da4b-4476-4119-809d-373c34f8d9b2","8.30104"
+"b258168d-9193-4b13-9a61-322e6f77e0d9","Austria","Vienna","WB","0474c967-2e50-4abe-bf83-685cf3f1537c","9.794945"
+"98c8985a-eb98-42d9-804c-1f5b65e2a9b9","Azerbaijan","Baku","WB","02b98d10-5d88-412b-9976-71e225824bb7","8.613859"
+"581464ae-54f0-4d8e-b250-00b8a3852cf2","Burundi","Bujumbura","WB",,
+"696ce956-76b8-42d4-bfbf-cc8ed084c516","East Asia & Pacific (IBRD-only countries)","","WB",,
+"a1315626-3f47-481c-a6e2-c0db1e4ab9c0","Europe & Central Asia (IBRD-only countries)","","WB",,
+"dfd6eaef-aef2-4d55-bd5b-c6cd6ff0a3bc","Belgium","Brussels","WB","949ac8da-cabf-43b8-ab6b-094dc97405a5","8.552092"
+"2eefbc79-8a12-4d3b-88e0-c93aac55209b","Benin","Porto-Novo","WB","d1df21b6-268b-4a5e-8aee-e677e8e759d1","9.386448"
+"343346ad-37b8-4341-9143-6d457da28a52","Burkina Faso","Ouagadougou","WB","b3aeb637-0567-4eed-aa4f-de8582661eb6","11.685382"
+"06caedba-eb6a-49b2-bdc1-468ff7354037","Bangladesh","Dhaka","WB","afa8c7bb-2746-49d3-bd4d-938621ab1933","8.613859"
+"0f987d7a-9c3e-465c-b1d9-90a372025c4b","Bulgaria","Sofia","WB","571194a3-b352-4e67-8274-fdb609cd40dc","9.502977"
+"0e39835a-6f80-495d-8d85-736527503b07","IBRD countries classified as high income","","WB",,
+"a16c7ad9-277e-40e9-9dec-0ec4609ee5e9","Bahrain","Manama","WB","651e639a-5666-495d-865c-42fc5c28692b","8.49869"
+"e4013bb0-d6f3-4858-9f02-4a03d73eaadd","Bahamas, The","Nassau","WB","0b4b84ec-8b46-435b-ac5a-bc09d9d1a189","9.256424"
+"0672b3ca-abc2-4bcc-b32a-c2362b66ea57","Bosnia and Herzegovina","Sarajevo","WB","fdbaa8ac-1f5a-4204-ad0e-6624d3288252","12.639163"
+"6dbb4d93-5df6-4f2f-ae2c-0acec6c91fbc","Latin America & the Caribbean (IBRD-only countries)","","WB",,
+"41f50371-a1ae-4de5-83a3-913eea3eb9e6","Belarus","Minsk","WB","3b16d47a-5fc0-4334-8ef0-1531b593ccb6","9.256424"
+"25507b03-4611-4228-a936-0628ec8f54c2","Belize","Belmopan","WB","e5736961-58c5-4cd2-928d-822ec10ea3b4","9.794945"
+"333fcd9f-af93-412b-9d7b-72e1e2cef678","Middle East & North Africa (IBRD-only countries)","","WB",,
+"d2a3b921-33db-487e-9acf-af71ad071807","Bermuda","Hamilton","WB","d0fc646e-c5bf-46b1-a374-d60109e74bd8","9.675339"
+"9585dd8b-bb04-4633-b50d-f77c520affa6","Bolivia","La Paz","WB",,
+"169ac57f-5b0b-4de6-878f-5b29384e5395","Brazil","Brasilia","WB","5953fc54-3d2d-4e60-8f84-2c5b746d13a0","9.256424"
+"5e167a7a-53f0-4e73-836a-951ce7eac15b","Barbados","Bridgetown","WB","60ed9868-cce8-4736-a41a-a85b147e3322","9.675339"
+"54c8b6bd-6723-4714-9dc3-c906e7a073fd","Brunei Darussalam","Bandar Seri Begawan","WB","8a4fd2bb-61c0-4bd2-9a07-86d4beb6bb4a","11.699078"
+"dfff7c37-4b7f-4c3f-a893-dade82253f73","Sub-Saharan Africa (IBRD-only countries)","","WB",,
+"0a060826-8f40-40c1-9a30-c3630aae5fee","Bhutan","Thimphu","WB","389c2159-6ea5-412d-a611-5baec3c41f09","8.613859"
+"225dea1a-1163-416c-b866-355d5a6dab00","Botswana","Gaborone","WB","1a3c6195-6d41-4cc6-83e8-37024623de2b","9.675339"
+"ff7400f3-2401-4145-a486-264201f32784","Sub-Saharan Africa (IFC classification)","","WB",,
+"5c4961f5-a69d-49d5-a968-4afe611719c0","Central African Republic","Bangui","WB","9b449b08-1220-4b37-ab2a-3926abc39b03","10.617502"
+"a33b847e-9102-47a6-aecc-7b0069f00d3f","Canada","Ottawa","WB","5ab65ff7-e04b-4c3c-bc71-077de4be7cb7","9.713965"
+"70d769a2-6693-4478-97e6-89e4961b5fd0","East Asia and the Pacific (IFC classification)","","WB",,
+"b485befc-71dd-4220-a083-c7304fb20676","Central Europe and the Baltics","","WB",,
+"1c59165a-4af3-4058-b0ef-b79558d0c6c7","Europe and Central Asia (IFC classification)","","WB",,
+"e96ece58-15d5-40c2-a00e-0992fdec790e","Switzerland","Bern","WB","68d8f181-9967-470d-9698-758c84a6894d","8.49869"
+"e256d955-175b-47e6-a97d-b92fc120534e","Channel Islands","","WB",,
+"d2616a40-4d24-4523-9707-af7dd60c146d","Chile","Santiago","WB","25aff01f-be63-4eed-abf7-48314b177ac7","9.713965"
+"ddba2b41-927b-4c23-bc66-6cd0b0e62922","China","Beijing","WB","2799552b-f5b7-4610-9502-beb0b43beb0e","9.16278"
+"c83855d9-36e1-437b-88c2-482f6eac7223","Cote d'Ivoire","Yamoussoukro","WB",,
+"882b797b-7e6b-49ad-bf75-5f2762be7a10","Latin America and the Caribbean (IFC classification)","","WB",,
+"6c1ef062-1dd2-4759-8933-dc6bc41b2461","Middle East and North Africa (IFC classification)","","WB",,
+"7bcbcc6b-1e2c-4ba5-ba54-d118b3933639","Cameroon","Yaounde","WB","4e0058b7-7c5f-4cb1-913c-ea4b525bcb76","9.675339"
+"21059cfa-3a9a-49ce-b142-15ccf9ad363b","Congo, Dem. Rep.","Kinshasa","WB","0c511442-07cb-4d3c-bc28-e0161afdb2d7","8.215064"
+"097086a3-3c28-4229-b10b-34d730a1839f","Congo, Rep.","Brazzaville","WB","fcae3cae-9588-43b8-b52e-9f18c00e30b8","8.0109625"
+"b364c0ee-d385-4398-bb01-bf141e0e63db","Colombia","Bogota","WB","ecce51fd-2c36-4c34-a905-448ee5ead261","9.850367"
+"f005d914-78d1-4c74-8461-a6ed8a548d0c","Comoros","Moroni","WB","2e34127d-8c93-4e8a-8eb9-cd5dbe48ee45","9.502977"
+"46bb2f73-2d33-4810-bc9b-5eb8acd3f1e1","Cabo Verde","Praia","WB","8333ea63-ca17-4a96-8a37-09d82dbd497c","11.98372"
+"5db83755-3ce0-47bc-81aa-24e253e5218f","Costa Rica","San Jose","WB",,
+"2b991279-3b48-4d5f-b1ff-372be015a688","South Asia (IFC classification)","","WB",,
+"a37a8ad2-75b1-45f5-88a7-537eec5b57d2","Caribbean small states","","WB",,
+"9aaf7520-1d02-4dab-95e2-d314ca13e99d","Cuba","Havana","WB","8f08a3e0-8a27-40f9-ad77-dd99b4cebd52","9.794945"
+"a93c89a3-3caf-462c-9599-ab3caae6697e","Curacao","Willemstad","WB",,
+"aa8214cd-065b-43c2-9e87-592f7fe637b4","Cayman Islands","George Town","WB",,
+"c863a931-ea51-4067-95d8-26a18c2e61f8","Cyprus","Nicosia","WB","8cfecd7c-ae48-48da-8d8a-cf4a4dffa237","9.675339"
+"42607ae3-097a-45bf-9419-8f77a2b062d4","Czechia","Prague","WB","0d2d10a5-3f76-448e-88b7-e30e742d25a2","9.850367"
+"a7dd9a23-c2ca-4f37-8364-232d4077fd2a","East Asia & Pacific (IDA-eligible countries)","","WB",,
+"4956c1c5-7614-4ef5-a02d-4666ad5cbf15","Europe & Central Asia (IDA-eligible countries)","","WB",,
+"de332e4a-3856-49cb-ae78-34acee6efb4f","Germany","Berlin","WB","e6b7b4ff-a345-43f1-b1d5-9ccefd04199d","9.742651"
+"ec491759-bd96-48a7-997e-93d6c24df8d6","IDA countries classified as Fragile Situations","","WB",,
+"8857012e-00f5-440c-a93d-1e8588283332","Djibouti","Djibouti","WB","f5bfcc77-3e9e-40f5-b767-86e726f49fff","9.794945"
+"d1c749c4-d51e-4955-a8a0-3421149fdce9","Latin America & the Caribbean (IDA-eligible countries)","","WB",,
+"97d97afc-ea87-4b03-87de-66e35ec3cd0e","Dominica","Roseau","WB","f85fe97f-a982-4e5a-adac-db45e1e68c89","9.794945"
+"f370a66c-e771-465d-a71a-dc1fc58e10a8","Middle East & North Africa (IDA-eligible countries)","","WB",,
+"81afa6f6-18a2-4804-8bea-d09fa7226840","IDA countries not classified as Fragile Situations","","WB",,
+"3445641d-1c97-4c96-962c-77aefeab511f","Denmark","Copenhagen","WB","1bdd32dd-660c-4041-81ba-ed73690f2bbd","8.613859"
+"1054ca0b-63d0-48b3-a25a-294cd952e786","IDA countries in Sub-Saharan Africa not classified as fragile situations ","","WB",,
+"06eda4f2-3883-4f46-bafe-373e57fa3de6","Dominican Republic","Santo Domingo","WB","d6b0852e-cfe6-41a3-b538-8d2733da16e8","11.00905"
+"3da4fee5-d178-4e68-9b43-e7fe42df7cf9","South Asia (IDA-eligible countries)","","WB",,
+"ee0bd2fe-27ac-48fd-9134-22e60d887a09","IDA countries in Sub-Saharan Africa classified as fragile situations ","","WB",,
+"ae096e3b-8fe5-43a1-82fa-6d0f10839c78","Sub-Saharan Africa (IDA-eligible countries)","","WB",,
+"3e6f874d-fa07-4796-a611-3220643a35ad","Algeria","Algiers","WB","f706842c-97c0-4bcd-b1ee-7f2440043f67","8.662884"
+"46db63e3-dc1c-43d8-b821-7b84317af072","East Asia & Pacific (excluding high income)","","WB",,
+"2e8d6d7b-c77d-4b0b-b92d-7cb8e2001803","Early-demographic dividend","","WB",,
+"5eb28922-4998-42f2-9e3a-d6628e14b016","East Asia & Pacific","","WB",,
+"1103101e-e23d-495b-97ba-122bb0348ff8","Europe & Central Asia (excluding high income)","","WB",,
+"69c8b4ab-4e65-4ea4-8373-5a4ac7bac779","Europe & Central Asia","","WB",,
+"07396c2c-0498-4228-930a-d48bf0482892","Ecuador","Quito","WB","eb93d401-e1fa-4703-81c7-a343d326bcfb","9.8091545"
+"5a2bfcb3-89de-4e9b-8eea-7f6fc736150b","Egypt, Arab Rep.","Cairo","WB","c32b05a9-8424-48dd-b8f1-332628fd9b97","8.53639"
+"b2c878b9-f208-4355-826b-d290cf8eb9a6","Euro area","","WB",,
+"a63016d1-77ab-4783-a86b-9b64330cd5e5","Eritrea","Asmara","WB","5b2e87df-38bc-4483-8f50-e29fbfa109b4","8.613859"
+"80dafb77-bbe1-47d1-9e3a-42f6bac86b1c","Spain","Madrid","WB","9380040b-83cf-4ea9-a4d0-4e784fa4af23","9.8091545"
+"68dad536-a548-47a6-8803-a705232b178d","Estonia","Tallinn","WB","be6ee77c-23d2-44c2-ba2c-3a2d888a1ad9","9.742651"
+"d94ebebb-7873-482e-a1cc-0d7648de2f32","Ethiopia","Addis Ababa","WB","74d660dd-d0ee-4ea8-a9c3-e0b9ab6eea3d","11.066418"
+"ecb58a5c-b293-42d9-a3aa-ea0334851c5d","European Union","","WB",,
+"aed27c33-bd6c-4d06-9a1b-7ced5267ac1a","Fragile and conflict affected situations","","WB",,
+"dad4f95c-b86e-4c1c-9bec-a95edc669588","Finland","Helsinki","WB","d8dbd874-2b57-4495-b26d-07a62a13c2c2","9.8091545"
+"94f539de-b978-4b5e-bde0-877edb8718f0","Fiji","Suva","WB","36c85440-34d2-43cc-8e0f-2eb66a536076","9.8091545"
+"c076b60b-1cd3-428f-a257-749e0a49b95b","France","Paris","WB","0b45cbd9-0166-4883-afbc-6929bf17a06b","9.713965"
+"982ebc39-f8c1-4f24-8f2d-8d998c94208b","Faroe Islands","Torshavn","WB","0721fab5-219a-4b3e-aec6-2ad4a9717732","11.00683"
+"b04cdc9a-6f31-46a3-83a4-53d14c825137","Micronesia, Fed. Sts.","Palikir","WB","433ed108-e70b-4050-b4c0-1a0e9dba01d4","9.850367"
+"a7be0a57-f379-4004-9629-4d69460b3a66","IDA countries classified as fragile situations, excluding Sub-Saharan Africa","","WB",,
+"d0c524a3-8d3d-4784-98dd-3fbc15e9281a","Gabon","Libreville","WB","92874a1a-1821-4064-a8e2-a424b5dd874d","9.8091545"
+"21384c6e-b74a-415d-928e-06b2b48a7c4d","United Kingdom","London","WB","378b9d35-7309-4b09-bce1-f5efdc79a383","10.054983"
+"ce0860e7-8cfd-440f-8797-3c349d1193aa","Georgia","Tbilisi","WB","cdafbf73-a601-414e-a76b-784c999a302c","8.636415"
+"f2e81338-870c-42e0-ac79-a221fa2bf5ab","Ghana","Accra","WB","29268621-47bc-4949-8ab8-3c784723981b","8.53639"
+"968bd553-6fcd-4c78-afc2-a4eb6a597baf","Gibraltar","","WB",,
+"81376713-a5a9-4f16-bb4e-738fcb202b77","Guinea","Conakry","WB","676b982e-c145-4804-bd84-3e85a1f507c1","9.850367"
+"8d33f5d9-1a7e-43e4-8c89-3ad729936cbf","Gambia, The","Banjul","WB","fb505c7a-825e-4bf8-8145-8eb096d1eb21","11.577435"
+"4ace6864-35b9-4e14-aa9a-d80d334408b4","Guinea-Bissau","Bissau","WB","ddb6908e-b03c-4ff5-96b3-4ae4cc117b88","11.297745"
+"48ee19ad-d6b1-4e6e-9373-ce4afe386c4f","Equatorial Guinea","Malabo","WB","af5a552f-8e67-42bb-8337-ad7e1dd7b0d3","12.009512"
+"c32fc676-f303-42b9-b499-7e418ea0d89a","Greece","Athens","WB","8cfae5ce-1c37-44b6-9b43-85b751267022","9.742651"
+"09ea5102-0d77-4900-9e47-d5210b413c73","Grenada","Saint George's","WB","02c9880c-c024-425d-a353-ead89378ae72","7.13265"
+"3b9d018b-b251-45e7-8321-7a0e63b3cfa2","Greenland","Nuuk","WB","efbf7b38-7be5-4112-b828-7bb699e128a8","8.636415"
+"1ff8fead-3199-4940-81a1-9c3bb91bccd3","Guatemala","Guatemala City","WB","bc9168dc-b220-4f32-85ea-6d439bfd2ea6","10.69923"
+"d89c1406-576c-4a92-959a-2baffc4f9d83","Guam","Agana","WB",,
+"7d956e9e-8cc0-4d36-8962-0e4782444f36","Guyana","Georgetown","WB","68b771a0-cc61-4c7e-97a1-ccdde3b44db3","9.742651"
+"3a3538e2-4f99-4e68-9a1f-9fadb7d6d179","High income","","WB",,
+"2991257c-7d86-4d70-8b00-f4c1f4b92c36","Hong Kong SAR, China","","WB",,
+"8ed539c2-a2c1-439b-8473-1cb9ea2ff67b","Honduras","Tegucigalpa","WB","b6a6a5c9-bcdd-46c6-ac41-93a8106fa8ce","9.742651"
+"7316d34c-1040-43dd-a17e-7e9ac0ac18a5","Heavily indebted poor countries (HIPC)","","WB",,
+"b08b3940-747a-42f6-8b8c-f5d396c66097","Croatia","Zagreb","WB","b419bdab-6c37-4897-99d4-9255d723b676","9.713965"
+"6387b599-24ae-45f8-8639-78a55a9a97eb","Haiti","Port-au-Prince","WB","3f52afe3-2d5e-4f8e-bf4d-ca191cad12f7","11.405092"
+"5e7ee3bb-10f8-4031-8bce-6554a1ae3a1d","Hungary","Budapest","WB","0686c16e-2c5f-470c-a46e-80ed47340083","9.850367"
+"5b4a61bf-94b9-405e-ae1d-08c1f371aa57","IBRD, including blend","","WB",,
+"e0983a59-dce8-45f7-bf8d-a143497f2fae","IBRD only","","WB",,
+"3a453f56-0425-4eea-a234-70d224ce3f57","IDA & IBRD total","","WB",,
+"ed7f2047-018a-4644-996c-a84dd2e4e7dc","IDA total","","WB",,
+"537475c6-3e3d-4ad2-b4cc-7ef22704a2bd","IDA blend","","WB",,
+"949d7dd3-62b1-4bf8-a795-8f7b7b9eddf7","Indonesia","Jakarta","WB","cf9a0021-3b08-44a6-98b6-d4eb5f61c0de","9.8091545"
+"487be08c-685f-4c45-892a-c236576709cf","IDA only","","WB",,
+"54bb44d2-f265-4b8a-bea3-416abe7c39ee","Isle of Man","Douglas","WB","7d88b1d8-7ce0-4494-bea6-6090b6fc3841","11.98574"
+"d343053d-f6c0-4906-a633-bd82605a84af","India","New Delhi","WB","a219e934-dc35-440c-86b4-b42e3b99c35e","11.038834"
+"47f65765-246b-4c34-b46d-022199477e35","Not classified","","WB",,
+"39a3effc-2b0b-4906-856d-69fa5f5077ed","Ireland","Dublin","WB","3b9b421b-d704-4902-bbbc-e12dab9cb17d","9.815064"
+"f53cd91d-63e4-480b-af47-2b7c941d081f","Iran, Islamic Rep.","Tehran","WB","687c746a-ec70-406e-a956-b18e61d73fb9","9.815064"
+"e32dd56f-1e54-4d41-8449-89aa39bc7c50","Iraq","Baghdad","WB","a1c756bc-bac6-4e32-aa29-a12f932b9397","9.713965"
+"47787fc8-d07f-4c15-82b9-49794031988f","Iceland","Reykjavik","WB","188ea569-272a-45f6-a8ec-15a0ca3712fd","8.662884"
+"7e9c12a0-6178-4203-a419-51fca081ecbb","Israel","","WB",,
+"f0096b6d-5cc9-4035-ad9e-9c4f22a2110d","Italy","Rome","WB","f4201294-e4b3-4162-b5d3-cc1e88cb1117","9.815064"
+"6894c40b-5c42-4854-b256-d2d8bb70e35f","Jamaica","Kingston","WB","655daf78-0a0a-45f3-b6be-781072f9f98f","9.713965"
+"dc1d9400-e825-43ce-acd5-f2ebe2a10534","Jordan","Amman","WB","63754195-aab9-47f6-8df3-9bf37615fe04","9.713965"
+"484962aa-5c8c-4f68-b571-91d5b67c8f2b","Japan","Tokyo","WB","11ff3ee7-0f53-4add-9882-6608d5bd0017","9.713965"
+"c3b0c00b-90d8-4969-abda-9f6c6336a28b","Kazakhstan","Astana","WB",,
+"10eca445-9fde-474f-ab37-77159d5fc676","Kenya","Nairobi","WB","6fea5711-d095-41b1-85d5-3e0e905a2711","9.850367"
+"dcc8d356-e73a-4036-a3be-5a384a701097","Kyrgyz Republic","Bishkek","WB",,
+"7e262b41-7535-4bb2-9fdd-4ae5e7f2dc23","Cambodia","Phnom Penh","WB","0206b51a-1e43-4a74-b979-4e87031a83a6","11.066418"
+"26bcbff7-d834-4b8a-96de-b7b030a11209","Kiribati","Tarawa","WB","d5dc3073-f833-4169-a986-ad8e43753dd9","8.634249"
+"40e2e60a-96e7-48ff-952a-fac663a78563","St. Kitts and Nevis","Basseterre","WB","2f9dfe94-7e3e-44f9-a81a-d314081ec90b","14.476086"
+"5a8d74d6-c25e-4845-857a-f2b371969e64","Korea, Rep.","Seoul","WB","f905b3e5-9654-4d9e-a6da-df3a51504cc5","7.7836347"
+"952b6a91-748f-4b3b-9099-4091044993c0","Kuwait","Kuwait City","WB","4a737cd0-f33f-4457-a9a4-823db515d612","9.53792"
+"f51df94e-b8fe-4e86-a1e1-24a681f6f269","Latin America & Caribbean (excluding high income)","","WB",,
+"5c08b706-ee02-4144-99c5-4eb100539580","Lao PDR","Vientiane","WB","b083df9e-69dc-4b23-9707-348da2064f34","8.039274"
+"b242f7c4-c849-49f2-a0b6-30829ca4ca48","Lebanon","Beirut","WB","93b77ab6-8e8a-4603-8e97-4b6f2be8f9bb","9.815064"
+"efaf3f93-7fa7-4279-9cfc-59a3a7126b03","Liberia","Monrovia","WB","e4b42a95-089a-401a-9b26-7f433fad2fcb","9.742651"
+"e44e9572-ad2e-49de-b4d9-ffefb5405bd1","Libya","Tripoli","WB","9f4b0f9a-53a8-4239-b856-6798de18d7d5","8.53639"
+"de59cf0c-f428-4b32-af19-aec0c1f4021b","St. Lucia","Castries","WB","5a42cd20-d43b-4a2a-aa9a-e354d875dcd0","8.249509"
+"68413d01-8e79-4961-92ac-54674050052c","Latin America & Caribbean ","","WB",,
+"3824c443-3659-49ff-8dcd-168f6adc274f","Least developed countries: UN classification","","WB",,
+"2b70cd8a-258e-4351-881d-5705c568ad54","Low income","","WB",,
+"1d30635a-470d-43b1-bc82-33e02336fa77","Liechtenstein","Vaduz","WB","4c4f2407-f2b2-4b29-9004-3a804c3b069e","8.636415"
+"9e8a4c9f-5f58-4bcd-a467-a0429cfd7e68","Sri Lanka","Colombo","WB","6931af56-d118-4f7a-b668-58b23c3631e1","10.411401"
+"7fcff979-e00c-4051-b715-f03efa52bf6e","Lower middle income","","WB",,
+"6826cbfc-2f22-48aa-a46d-e021b1104da2","Low & middle income","","WB",,
+"bb054350-c913-4bc4-8b62-7f128503ed56","Lesotho","Maseru","WB","66434403-6270-4baa-b4ba-cc31d844bd69","8.52935"
+"e5c51547-7465-4ee4-9f75-5cc3e3adfda3","Late-demographic dividend","","WB",,
+"e8bb058a-9606-48e8-979a-a6828eaee996","Lithuania","Vilnius","WB","c50665a1-c35a-404f-aa54-11b5a2d2b26a","9.815064"
+"af78f7bf-c17f-43f6-babf-b4f987c760da","Luxembourg","Luxembourg","WB","16240f19-db9d-453d-8123-725eeb731d74","9.742651"
+"fb1d0063-6b76-400a-a44b-7a48ff3c500e","Latvia","Riga","WB","62625c12-d636-4384-8d18-2bd72592f9be","9.850367"
+"60bee08d-aa06-436d-bd4c-ca01ca6b208c","Macao SAR, China","","WB",,
+"4dda5d26-437f-4ff2-897b-da67765160b7","St. Martin (French part)","Marigot","WB",,
+"42ad1d00-72a7-442a-95c4-1c5811a5ea35","Morocco","Rabat","WB","0a0b79b1-fd51-4574-bb48-17e5c380ea16","8.53639"
+"62e741c8-ba95-4e0e-bfad-d0428b66ba20","Monaco","Monaco","WB","b1b0c57c-ea09-49e8-8786-2bc2466f032e","9.713965"
+"54d279f3-c052-4449-bede-27a976cc6968","Moldova","Chisinau","WB","dab9f865-8a4d-4783-bd73-6e7458798354","9.742651"
+"8e3c4740-348f-47b7-b451-35f0a38d7eb1","Middle East (developing only)","","WB",,
+"bf250e5e-3402-4c3d-8e97-f0143f6cd038","Madagascar","Antananarivo","WB","5dabe25b-9588-400f-98a0-e1ba68f374e7","9.815064"
+"a166ef7d-3367-436a-a676-9fbf321e7870","Maldives","Male","WB","24951d89-ca73-4b24-b16a-f055b512dafb","9.8091545"
+"7b5ff80b-eba6-4407-901b-48f9d50767ca","Middle East & North Africa","","WB",,
+"97f5eab3-44b5-4752-b047-f57c95473b24","Mexico","Mexico City","WB","b7557a48-8ff7-4597-9f16-fb3940a29b31","10.692823"
+"d8655cdf-4696-48fa-ab37-f7f0eb0d3ead","Marshall Islands","Majuro","WB","c2e92b23-e809-40a2-bb77-30446fc24a9a","11.051285"
+"e4bdccca-b16f-4743-a2cd-6b43b2a6cd90","Middle income","","WB",,
+"8d1c16da-216b-4833-afe4-c91878fd65d5","North Macedonia","Skopje","WB","7780309b-0cf7-443e-b1bb-97e34eb3b75f","10.037296"
+"6b541e30-4f97-4c19-ab3a-431aa246cdb3","Mali","Bamako","WB","cb8adec6-0030-45fa-9eb6-68d45132337d","8.53639"
+"5cb7e9f0-f4cd-4f94-a271-8de3a13aafac","Malta","Valletta","WB","80d98497-5713-43a6-ba42-1173a7b0cbeb","9.713965"
+"d031ba51-7966-4229-afac-7eeedffdf050","Myanmar","Naypyidaw","WB",,
+"3329a13e-76ff-49fd-b901-c81a0309e718","Middle East & North Africa (excluding high income)","","WB",,
+"ccb6de8d-9dcc-449f-928a-a9354ffa46c5","Montenegro","Podgorica","WB","00ecf711-9a1c-4702-a16b-e5dd2812c03c","9.815064"
+"dc03a83a-e30d-4646-b22a-0571e38c30a9","Mongolia","Ulaanbaatar","WB","6b970c8c-3c4a-40c1-b760-f322e86fbb32","8.53639"
+"84ee5b5a-a8a4-4e89-8f27-cd9c596ddf71","Northern Mariana Islands","Saipan","WB","60aa7b9e-0c3a-4af0-ac5e-27e21cc48b79","12.083511"
+"97c03c5f-8935-4a0c-ae45-634937383bf9","Mozambique","Maputo","WB","9324ab3a-636a-4d8a-b577-0e8cdbdfceb2","9.815064"
+"9937abf3-fec7-4fa2-a8b9-38aecb57766a","Mauritania","Nouakchott","WB","a79dd5f5-2c52-4a3a-9d48-84436c8917c1","9.850367"
+"d09227d9-babe-4efc-a50c-182eb3db1cdc","Mauritius","Port Louis","WB","539fd0cc-63a5-490e-9827-a6c4d35b74ab","10.455341"
+"d1386d54-d744-409c-a996-c678f441cf2a","Malawi","Lilongwe","WB","4d7959f8-a9aa-44f6-83ca-ad36877b6916","8.634249"
+"1fbd10d5-9735-4fb2-b78a-793d475e040b","Malaysia","Kuala Lumpur","WB","cd259ea1-ac63-4e0e-b206-0649f2c41bbd","11.066418"
+"2bf1e56f-413a-4b16-adef-80aa1f7931ee","North America","","WB",,
+"a4003e5c-22e6-44d2-85b7-fcda57bfb8d9","North Africa","","WB",,
+"4747b1bf-edd0-4714-96ee-44f7b868e187","Namibia","Windhoek","WB","bf7085cf-1109-4631-b472-fc2057334b5f","9.742651"
+"1d91d6c9-8572-41a6-b4dd-3af49ddd18e2","New Caledonia","Noum'ea","WB","15366684-d263-403c-afce-cba603ed2926","11.436399"
+"7d901db8-c083-4f8c-90ab-5bef8833a916","Niger","Niamey","WB","05987022-c3ee-45d2-8397-b09d2bb96ec9","9.713965"
+"f2ed24a1-89bc-4ed7-b664-97ed508728ad","Nigeria","Abuja","WB","12c79ed8-427f-4fa6-8db2-1e060bec914c","9.713965"
+"705f816c-effd-4dd2-9384-641ea7cc93c2","Nicaragua","Managua","WB","ac9c55c2-f7a7-4e41-97fd-917b9077f7b3","9.815064"
+"b6af346b-7b5a-4bca-af13-1d240b7813b2","Netherlands","Amsterdam","WB","8dc66505-daac-4296-9b48-6f8ee5a2e21f","9.850367"
+"2727449f-e5e9-4d01-a492-8b5debc8fc02","Norway","Oslo","WB","be29a753-5c72-48ac-9c45-9e09800909dd","9.850367"
+"8e6037d2-5f20-4301-a236-98614ae0a26d","Nepal","Kathmandu","WB","ddeb215f-71c4-4158-a585-deb7c129dde2","9.8091545"
+"996c50cf-8af7-4cf0-b2b6-fb528054c14a","Non-resource rich Sub-Saharan Africa countries","","WB",,
+"ae9832a2-4cac-473e-aa6d-fb03d9f3c637","Nauru","Yaren District","WB","1cfee937-d42f-4945-a5b9-39bfcfb9bfd0","9.742651"
+"94d354cb-de91-4df4-a4f4-c87c68082aec","IDA countries not classified as fragile situations, excluding Sub-Saharan Africa","","WB",,
+"2d72b838-32cc-4589-bc7b-01806714def6","New Zealand","Wellington","WB","0eff60f2-bf27-4697-83db-4db704533d46","11.604608"
+"002a5d98-72ec-4a77-82f7-ad8cc9bc0229","OECD members","","WB",,
+"4f05380e-66f7-4219-87c2-c0140b11cf67","Oman","Muscat","WB","bbd69be2-66f4-4fd1-a20a-9584c396b242","8.634249"
+"260de190-95e1-4587-ad33-947585de0032","Other small states","","WB",,
+"b87a714f-ace8-44c5-bbf6-8a49ae27cdef","Pakistan","Islamabad","WB","97a05d15-f457-4035-818a-3e8a4ac34564","9.713965"
+"4374a8fd-351b-462a-99c3-6dd8e80177ef","Panama","Panama City","WB","2be2ba12-aee6-46b3-84e9-b86816b998fe","10.154723"
+"74c0e65c-f593-4f8f-9c87-650a1d1e06f2","Peru","Lima","WB","1231f30d-5e25-43f7-813c-f4712a1de949","9.8091545"
+"252db764-7079-4b08-97eb-db2736a9c6b5","Philippines","Manila","WB","3c34811b-914d-44f7-bd41-9c7e6640ee64","9.850367"
+"dbf7dc36-3b1f-488d-b330-13e69206f472","Palau","Koror","WB",,
+"efa12ecc-e574-43c2-aaba-08bf43f5465e","Papua New Guinea","Port Moresby","WB","b0091827-b130-4480-94a9-52ddbd6101dd","13.406649"
+"a1a41fab-4905-479b-9303-d81591ea6152","Poland","Warsaw","WB","03829e24-efa2-4706-a753-f0c4b99edacd","9.815064"
+"cf040d8d-7d11-4e4f-8aa9-f0c60819bdac","Pre-demographic dividend","","WB",,
+"b7cb2022-0b80-4b96-8b8e-887855c6d086","Puerto Rico","San Juan","WB",,
+"ed1be6ae-3571-4703-848c-afb25d37596d","Korea, Dem. People's Rep.","Pyongyang","WB","f4fdfe51-a8b2-453b-9fa5-e27777d0c9d8","7.7836347"
+"9f0fe989-cfc8-41a0-b834-9fa254227667","Portugal","Lisbon","WB","a33e7db3-adae-4191-8df9-2d2bed497b1b","9.8091545"
+"0acbbe96-6b72-4150-998a-c667bd595cb9","Paraguay","Asuncion","WB","381fc13c-5498-4d13-a470-b88c55ae2ab9","9.815064"
+"d3af2703-8bac-488c-a960-53a2c20cf67c","West Bank and Gaza","","WB",,
+"db6c6cfd-f2a9-4d53-bd68-b41259695195","Pacific island small states","","WB",,
+"36a8db01-e6ba-46d8-96f0-2dc3c48abc34","Post-demographic dividend","","WB",,
+"a30972d1-be8a-44dc-a580-6602c461296a","French Polynesia","Papeete","WB","d7b27bf7-182c-4b67-b101-99e6f8bef26d","10.183249"
+"5b00aaea-5fe1-45ff-a1f7-0a3882fd8b18","Qatar","Doha","WB","0fbd6908-4318-46ce-9db9-7fe0b231f21c","9.815064"
+"36639c99-958e-4229-8b31-dc8a6bbc4b19","Romania","Bucharest","WB","262e29a1-3249-4ade-83ea-35a1f8fb8911","9.850367"
+"9d2f63c0-d2ca-4110-a11b-f2e5da891a6f","Resource rich Sub-Saharan Africa countries","","WB",,
+"a9e0f141-811a-48bd-8f55-7f948871edac","Russian Federation","Moscow","WB","b4e72a81-7cc4-4914-8b6b-220bbc28ba90","8.921694"
+"f5c0ee5d-badf-4bd6-80fc-1a980b67a4ae","Rwanda","Kigali","WB","9acb161c-30d4-4273-81ea-fa0ded5887b6","9.713965"
+"266207e9-f61d-425b-9b51-b247ce578d93","South Asia","","WB",,
+"c679f866-fd07-4c01-80e3-a3ffdb249c47","Saudi Arabia","Riyadh","WB","b4191d93-b8f6-4eef-ad9a-77ba52d8ee5c","11.8199005"
+"2e8b5f81-0e77-4026-8342-cba3f3729d74","Sudan","Khartoum","WB","b9667b10-28eb-4880-932d-e5a514ffbb2c","9.8091545"
+"8ca01693-05f1-489d-911f-bb9bfe8f9d46","Senegal","Dakar","WB","0b2a529a-db81-498a-996f-dc540f495e99","9.815064"
+"ade64f81-28b0-482b-ba72-e698022290db","Singapore","Singapore","WB","f32782c5-f38d-4cd0-8bcd-a2b1c4596f8c","9.850367"
+"90b6031c-df99-4f7f-91f1-1b81c47e0aec","Solomon Islands","Honiara","WB","9d556840-7c49-4ed0-a500-ea8d82dbf64c","11.051285"
+"85b86518-b0b7-4814-bc35-dbf9b900d20e","Sierra Leone","Freetown","WB","1711cd1f-4592-4cf0-8ddd-db18f4dfe887","10.583485"
+"774998ef-959e-49fe-b97d-da671d747719","El Salvador","San Salvador","WB","b22e1e6f-9845-4768-9a7d-577e628684d5","12.791962"
+"c63f782c-d469-4352-aebe-902fd38d4ced","San Marino","San Marino","WB",,
+"96c140e3-ee5a-4d50-a6b3-8bccb000350d","Somalia","Mogadishu","WB","c1b9a296-3ab5-4a71-9113-942a5ff32b53","9.850367"
+"5c06c6db-debb-4adf-870e-f964f75f4b20","Serbia","Belgrade","WB","0680591c-5ae6-47da-aaa3-0a4c4280245a","8.662884"
+"22b79fd0-b3e2-4325-93c0-8f135ea98842","Sub-Saharan Africa (excluding high income)","","WB",,
+"aa2098c3-987d-4dff-b359-b25bb3309a1a","South Sudan","Juba","WB","23d534f5-e87c-4c38-8f39-34a16bb68182","12.036737"
+"ea289f49-aea9-4010-8084-42f34b8c9f9d","Sub-Saharan Africa ","","WB",,
+"b00810b7-2e2e-4ad4-a3aa-7af07fa23687","Small states","","WB",,
+"e9073d2f-5586-48eb-bde2-150bc9cd2cef","Sao Tome and Principe","Sao Tome","WB",,
+"2472e3b4-4dfa-4053-b3e4-81889220eb01","Suriname","Paramaribo","WB","7472f744-f211-4693-bfe8-b2601bfc7341","9.850367"
+"8496c57c-6fef-4a49-86df-67584cba84e7","Slovak Republic","Bratislava","WB","d3c7c67f-28a4-4f7f-9d68-49aadc7dc48d","8.028322"
+"6e767989-3d22-4bcb-a969-8faf18585272","Slovenia","Ljubljana","WB","cee1916c-6336-4054-8183-fc7e60c237f2","9.815064"
+"3330e688-cf35-4650-a6ba-ab8eedc8b107","Sweden","Stockholm","WB","66ddd3e7-8136-4faa-9987-f2e0c714a3ea","9.850367"
+"62d87b5d-b388-49f9-b2d4-b1487f3c87fa","Eswatini","Mbabane","WB","15feda85-e4f1-4c2c-b42e-fb63a06d6ffe","9.713965"
+"a4b7169b-fd33-48e5-a3c6-838f0e1d3dac","Sint Maarten (Dutch part)","Philipsburg","WB","6ceeef40-e9ff-4550-a80e-54d5c3bb6b5b","11.577435"
+"4f3df4a6-8177-4ce1-9798-a2aa20252524","Sub-Saharan Africa excluding South Africa","","WB",,
+"339d8d5c-b3fb-4dfa-bd2d-1ac57757f18e","Seychelles","Victoria","WB","0b8f6564-62c9-4a05-af89-7f60a9241241","9.713965"
+"b2a9ac5c-9700-4059-b9db-3e22c4dd3c14","Syrian Arab Republic","Damascus","WB","8802311e-dc1e-475a-89a3-4fc03f1e54cf","8.630541"
+"6b71faf6-87ad-4903-8a51-d4fe256fbe77","Turks and Caicos Islands","Grand Turk","WB",,
+"dd29c348-4e2a-4d6f-9384-93311f09db91","Chad","N'Djamena","WB","b703a5c7-c1da-4de1-9bc0-1b1b0684a263","9.8091545"
+"860736a7-839e-46d7-9b8b-71c8e02da6ca","East Asia & Pacific (IDA & IBRD countries)","","WB",,
+"e93cfc61-bfea-431b-8f00-b1d56fecbad6","Europe & Central Asia (IDA & IBRD countries)","","WB",,
+"a63cade3-2903-4984-977f-bb13e99af70d","Togo","Lome","WB","32c6907e-a22e-41e8-82fe-f8271bcf53e7","9.179319"
+"cbb5c74c-3e74-4e30-ba8c-69f5c00ca68a","Thailand","Bangkok","WB","273818ce-da20-4b12-82be-e30dfc2a8bcf","8.662884"
+"d96c4274-7986-4ea2-b184-ad250d8ff09a","Tajikistan","Dushanbe","WB","4049982c-0803-4bb5-9841-591818c8e5f6","9.815064"
+"faa7f7d0-c6d4-4ef4-9ef4-5eb8fc8f293d","Turkmenistan","Ashgabat","WB","3ce9498e-7a30-4e87-971b-d6acbb13e177","9.713965"
+"ab683d56-fe91-4f71-a0c4-f6aa2aa84985","Latin America & the Caribbean (IDA & IBRD countries)","","WB",,
+"985ea1d4-c0d3-4e93-827e-a7483f626844","Timor-Leste","Dili","WB","7231eaa5-51a0-4f1a-a2a4-a49d99408edb","12.036737"
+"5776eb21-7c9d-4ed0-afd5-b0c8a04cf504","Middle East & North Africa (IDA & IBRD countries)","","WB",,
+"58947008-5e38-4611-8970-601f88498aa9","Tonga","Nuku'alofa","WB","bac43918-fc40-412c-a490-f5d9ad80eff1","9.742651"
+"ed695b42-1391-4311-bdbb-8d7c5a906646","South Asia (IDA & IBRD)","","WB",,
+"29e19b2e-9a1b-43a7-9ba6-fe13e3a0994b","Sub-Saharan Africa (IDA & IBRD countries)","","WB",,
+"74471832-ed4a-426e-a2eb-fd1070c5da79","Trinidad and Tobago","Port-of-Spain","WB","057ef4d7-c7b1-46c8-95d1-b2e78f7218ea","13.8408575"
+"9c443ca7-492c-4cb5-894b-cc2e08ff7b0b","Tunisia","Tunis","WB","4b8368bb-f9af-4f17-ac2f-b4d0ddd43683","9.815064"
+"1ab9f68b-d2a8-40fe-a4f2-ff6a0d6fce8c","Turkiye","Ankara","WB","2e6a8c9a-5d3a-4ead-b152-ef46a00cc4b9","7.479764"
+"1cb348c3-e728-4f52-822a-39d1419c0ebe","Tuvalu","Funafuti","WB","98972fdf-2081-4ef9-9a05-7bbdd53cfb58","9.8091545"
+"f7eb1897-440e-474f-ae54-785b75e3f482","Taiwan, China","","WB",,
+"95f25dd7-15f3-49b5-88cd-c6b2d180e06d","Tanzania","Dodoma","WB","7f9d1710-1804-4af0-b436-1eadfc259516","8.634249"
+"3a22e246-5400-4d0d-96a3-3637c3eed864","Uganda","Kampala","WB","59efbdbe-0210-4700-ba23-1f77ae3195bc","9.850367"
+"32cc02d9-06ce-4baa-9100-957a8b9a8f07","Ukraine","Kiev","WB",,
+"d460012a-b26a-4bcb-bdeb-85af6367f59b","Upper middle income","","WB",,
+"24d82e32-aa90-4d6c-b077-0680b5fd6de7","Uruguay","Montevideo","WB","618a8eb7-a2b6-4036-8221-f206aec1fb0e","9.815064"
+"2a497256-caa4-4cfe-a2da-f6af446fad6c","United States","Washington D.C.","WB","31dcb683-b923-4da8-84e4-e58e2286e751","9.752449"
+"bd2bfb08-0674-49e3-a2ac-9f6def558b05","Uzbekistan","Tashkent","WB","0273a6d4-ef86-4777-acdf-8c5beef1a0d8","9.8091545"
+"9be800ed-a25a-429b-8d5d-7707a0753ea1","St. Vincent and the Grenadines","Kingstown","WB","82015770-b7b6-46f5-94be-895104aa5320","13.170855"
+"e1c6522c-6d59-4904-93bf-a111b7c9a50c","Venezuela, RB","Caracas","WB","7fe9e861-085e-4f36-8b93-470403509e93","9.850367"
+"358176ad-ed04-418c-96d5-b6ac5952442a","British Virgin Islands","Road Town","WB",,
+"c366afa6-5397-4188-a172-a2815ee4efc2","Virgin Islands (U.S.)","Charlotte Amalie","WB","6cd56497-0a07-4d34-a5f6-440b3d4543c5","13.046808"
+"83a4eadb-1c0a-4208-a6c7-ea8fc2b4632a","Vietnam","Hanoi","WB","813ccb56-4014-45eb-a07e-2d3f029211ce","8.634249"
+"fb1a1750-39f4-4139-8b7a-94687c0bdfc1","Vanuatu","Port-Vila","WB","7b390e81-cab1-4794-b154-2b4f68b54e72","10.511829"
+"db98cf3b-8105-4a15-92d8-4c1178368e1b","World","","WB",,
+"ddcbadee-c508-47ae-a805-16175f9159b2","Samoa","Apia","WB","9fc364cd-cc13-4f21-9103-83082252a2d5","9.071036"
+"b504738f-fe4a-4ad2-8a88-5237643e6d32","Kosovo","Pristina","WB","7e846e49-3a5f-418d-bfaf-31b11a7faade","9.713965"
+"b61dd6b9-8710-4f4f-acdb-78a9bc2b59b8","Sub-Saharan Africa excluding South Africa and Nigeria","","WB",,
+"8d74ba26-125b-480b-aeb1-df9ca924f326","Yemen, Rep.","Sana'a","WB","17f13415-0ca5-445e-8d92-a9cd1f547eab","8.966948"
+"ef05e7bf-3f51-4cfb-af9f-44a66ccaf3cd","South Africa","Pretoria","WB","8403238e-a078-43a5-82b3-90fbc572ad81","9.731243"
+"5c0036c6-9e9d-48c0-b851-1f35c6689c00","Zambia","Lusaka","WB","3970bf27-9395-48fb-8815-d49a35553ffc","9.850367"
+"69a3edba-727e-4ff7-bb71-a2f1fcd91abd","Zimbabwe","Harare","WB","baf37fce-3ee5-4907-ae43-f480dad7597f","9.742651"
