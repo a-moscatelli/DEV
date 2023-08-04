@@ -1,0 +1,11 @@
+# Unigram
+
+U_tokenclass_line_pos__prev2:%x[-2,1]/%x[-2,2]/%x[-2,3]
+U_tokenclass_line_pos__prev1:%x[-1,1]/%x[-1,2]/%x[-1,3]
+U_tokenclass_line_pos__curr_:%x[0,1]/%x[0,2]/%x[0,3]
+U_tokenclass_line_pos__next1:%x[1,1]/%x[1,2]/%x[1,3]
+U_tokenclass_line_pos__next2:%x[2,1]/%x[2,2]/%x[2,3]
+
+# Bigram
+
+# B_00
