@@ -1,0 +1,70 @@
+
+
+isa(h0,ho).
+isa(h1,ho).
+isa(h2,ho).
+isa(h3,ho).
+
+isa(c0,co).
+isa(c1,co).
+isa(c2,co).
+isa(c3,co).
+isa(c4,co).
+isa(c5,co).
+
+isa(b0,fbb).
+isa(b1,fbb).
+isa(b2,fbb).
+isa(b3,fbb).
+isa(b4,fbb).
+
+isa(w0,fbw).
+isa(w1,fbw).
+isa(w2,fbw).
+isa(w3,fbw).
+isa(w4,fbw).
+
+follows(h1,h0).
+follows(h2,h1).
+follows(h3,h2).
+
+greater_than(HH,LL) :- follows(HH,MID), greater_than(MID,LL).
+greater_than(HH,LL) :- follows(HH,LL).
+
+
+itertools_product_co(CH0,CH1,CH2,CH3) :- isa(CH0,co), isa(CH1,co), isa(CH2,co), isa(CH3,co).    % sz = 1296 = NOC**NOH
+possibilesecrets(CH0,CH1,CH2,CH3) :- itertools_product_co(CH0,CH1,CH2,CH3).
+
+% reconciliations with python itertools are mentioned below.
+
+itertools_combinations_ho(H0,H1) :- isa(H0,ho), isa(H1,ho), greater_than(H1,H0).            % = itertools.combinations(range(4), r=2) %%% sz = 6
+itertools_combinations_ho(H0,H1,H2) :- itertools_combinations_ho(H0,H1), itertools_combinations_ho(H0,H2), itertools_combinations_ho(H1,H2).    % = itertools.combinations(range(4), r=3) %%% sz = 4
+itertools_combinations_ho(H0,H1,H2,H3) :- itertools_combinations_ho(H0,H1,H2), itertools_combinations_ho(H0,H1,H3), itertools_combinations_ho(H0,H2,H3), itertools_combinations_ho(H1,H2,H3).  % = itertools.combinations(range(4), r=4) %%% sz = 1
+
+itertools_permutations_co(CH0,CH1) :- isa(CH0,co), isa(CH1,co), CH0 != CH1. % itertools.permutations(range(6), r=2) %%% sz = 30
+itertools_permutations_co(CH0,CH1,CH2) :- itertools_permutations_co(CH0,CH1), itertools_permutations_co(CH0,CH2), itertools_permutations_co(CH1,CH2). % = itertools.permutations(range(6), r=3) %%% sz = 120
+itertools_permutations_co(CH0,CH1,CH2,CH3) :- itertools_permutations_co(CH0,CH1,CH2), itertools_permutations_co(CH0,CH1,CH3), itertools_permutations_co(CH0,CH2,CH3), itertools_permutations_co(CH1,CH2,CH3). % = itertools.permutations(range(6), r=4) %%% sz = 360
+permutations(CH0,CH1,CH2,CH3) :- itertools_permutations_co(CH0,CH1,CH2,CH3).
+
+%%%%%%%%%%%
+
+secret(c1,c3,c1,c4).
+guessnfeedback(c1,c0,c2,c2,b1,w0).
+guessnfeedback(c2,c3,c1,c4,b3,w0).
+
+%%%%%%%%%%%
+
+% now show the subset of possibilesecrets(CH0,CH1,CH2,CH3) that have all the combinations of blacks in common with all the feedbacks I have got.
+
+% from now on: untested and TBC
+
+postg_product_b1(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 = CH0, GCH1 != CH1, GCH2 != CH2, GCH3 != CH3, BB=b1.
+postg_product_b1(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 != CH0, GCH1 = CH1, GCH2 != CH2, GCH3 != CH3, BB=b1.
+postg_product_b1(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 != CH0, GCH1 != CH1, GCH2 = CH2, GCH3 != CH3, BB=b1.
+postg_product_b1(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 != CH0, GCH1 != CH1, GCH2 != CH2, GCH3 = CH3, BB=b1.
+
+postg_product_b3w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 != CH0, GCH1 = CH1, GCH2 = CH2, GCH3 = CH3, BB=b3,WW=w0.
+postg_product_b3w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 = CH0, GCH1 != CH1, GCH2 = CH2, GCH3 = CH3, BB=b3,WW=w0.
+postg_product_b3w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 = CH0, GCH1 = CH1, GCH2 != CH2, GCH3 = CH3, BB=b3,WW=w0.
+postg_product_b3w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 = CH0, GCH1 = CH1, GCH2 = CH2, GCH3 != CH3, BB=b3,WW=w0.
+
