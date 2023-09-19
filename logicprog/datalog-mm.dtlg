@@ -1,4 +1,7 @@
 
+%% tested with java -jar AbcDatalog-0.6.0.jar
+%% also, online: https://datalog.db.in.tum.de/
+
 %entities
 
 isa(h0,ho).
