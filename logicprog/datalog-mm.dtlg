@@ -1,4 +1,4 @@
-%% tested with java -jar AbcDatalog-0.6.0.jar
+%% tested with java -jar AbcDatalog-0.6.0.jar %% from https://harvardpl.github.io/AbcDatalog/
 %% also, online: https://datalog.db.in.tum.de/
 
 %entities
@@ -35,37 +35,13 @@ follows(h1,h0).
 follows(h2,h1).
 follows(h3,h2).
 
-greater_than(HH,LL) :- follows(HH,MID), greater_than(MID,LL).
-greater_than(HH,LL) :- follows(HH,LL).
-
-
-itertools_product_co(CH0,CH1,CH2,CH3) :- isa(CH0,co), isa(CH1,co), isa(CH2,co), isa(CH3,co).    % sz = 1296 = NOC**NOH
-possibilesecrets(CH0,CH1,CH2,CH3) :- itertools_product_co(CH0,CH1,CH2,CH3).
-possibilesecretsv(H,C) :- isa(H,ho), isa(C,co).
-% example possibilesecretsv(h1, c3)
-
-
-% reconciliations with python itertools are mentioned below.
-
-itertools_combinations_ho(H0,H1) :- isa(H0,ho), isa(H1,ho), greater_than(H1,H0).            % = itertools.combinations(range(4), r=2) %%% sz = 6
-itertools_combinations_ho(H0,H1,H2) :- itertools_combinations_ho(H0,H1), itertools_combinations_ho(H0,H2), itertools_combinations_ho(H1,H2).    % = itertools.combinations(range(4), r=3) %%% sz = 4
-itertools_combinations_ho(H0,H1,H2,H3) :- itertools_combinations_ho(H0,H1,H2), itertools_combinations_ho(H0,H1,H3), itertools_combinations_ho(H0,H2,H3), itertools_combinations_ho(H1,H2,H3).  % = itertools.combinations(range(4), r=4) %%% sz = 1
-
-itertools_permutations_co(CH0,CH1) :- isa(CH0,co), isa(CH1,co), CH0 != CH1. % itertools.permutations(range(6), r=2) %%% sz = 30
-itertools_permutations_co(CH0,CH1,CH2) :- itertools_permutations_co(CH0,CH1), itertools_permutations_co(CH0,CH2), itertools_permutations_co(CH1,CH2). % = itertools.permutations(range(6), r=3) %%% sz = 120
-itertools_permutations_co(CH0,CH1,CH2,CH3) :- itertools_permutations_co(CH0,CH1,CH2), itertools_permutations_co(CH0,CH1,CH3), itertools_permutations_co(CH0,CH2,CH3), itertools_permutations_co(CH1,CH2,CH3). % = itertools.permutations(range(6), r=4) %%% sz = 360
-% short
-permutations(CH0,CH1,CH2,CH3) :- itertools_permutations_co(CH0,CH1,CH2,CH3).
-
-%%%%%%%%%%%
-
+%
 secret(c1,c3,c1,c4).
 secretv(h0,c1).
 secretv(h1,c3).
 secretv(h2,c1).
 secretv(h3,c4).
-% secretv(H,C)?
-
+%
 guessnfeedback(g1,c1,c0,c1,c2,b2,w0).
 guessnfeedback(g2,c2,c3,c1,c4,b3,w0).
 
@@ -78,6 +54,40 @@ guessv(g2,h0,c2).
 guessv(g2,h1,c3).
 guessv(g2,h2,c1).
 guessv(g2,h3,c4).
+%
+
+
+
+greater_than(HH,LL) :- follows(HH,MID), greater_than(MID,LL).
+greater_than(HH,LL) :- follows(HH,LL).
+
+
+itertools_product_co(CH0,CH1,CH2,CH3) :- isa(CH0,co), isa(CH1,co), isa(CH2,co), isa(CH3,co).    % sz = 1296 = NOC**NOH
+possibilesecrets(CH0,CH1,CH2,CH3) :- itertools_product_co(CH0,CH1,CH2,CH3).
+
+possibilesecretsv(H,C) :- isa(H,ho), isa(C,co).
+
+% example of output = possibilesecretsv(h1, c3)
+
+
+% reconciliations with python itertools are mentioned below.
+
+itertools_combinations_ho(H0,H1) :- isa(H0,ho), isa(H1,ho), greater_than(H1,H0).            % = itertools.combinations(range(4), r=2) %%% sz = 6
+itertools_combinations_ho(H0,H1,H2) :- itertools_combinations_ho(H0,H1), itertools_combinations_ho(H0,H2), itertools_combinations_ho(H1,H2).    % = itertools.combinations(range(4), r=3) %%% sz = 4
+itertools_combinations_ho(H0,H1,H2,H3) :- itertools_combinations_ho(H0,H1,H2), itertools_combinations_ho(H0,H1,H3), itertools_combinations_ho(H0,H2,H3), itertools_combinations_ho(H1,H2,H3).  % = itertools.combinations(range(4), r=4) %%% sz = 1
+
+itertools_permutations_co(CH0,CH1) :- isa(CH0,co), isa(CH1,co), CH0 != CH1. % itertools.permutations(range(6), r=2) %%% sz = 30
+itertools_permutations_co(CH0,CH1,CH2) :- itertools_permutations_co(CH0,CH1), itertools_permutations_co(CH0,CH2), itertools_permutations_co(CH1,CH2). % = itertools.permutations(range(6), r=3) %%% sz = 120
+itertools_permutations_co(CH0,CH1,CH2,CH3) :- itertools_permutations_co(CH0,CH1,CH2), itertools_permutations_co(CH0,CH1,CH3), itertools_permutations_co(CH0,CH2,CH3), itertools_permutations_co(CH1,CH2,CH3). % = itertools.permutations(range(6), r=4) %%% sz = 360
+
+% short
+permutations(CH0,CH1,CH2,CH3) :- itertools_permutations_co(CH0,CH1,CH2,CH3).
+
+%%%%%%%%%%%
+
+% secretv(H,C)?
+
+
 % guessv(G,H,C)?
 
 
