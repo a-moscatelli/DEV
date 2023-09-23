@@ -1,80 +1,51 @@
-%% tested with java -jar AbcDatalog-0.6.0.jar %% from https://harvardpl.github.io/AbcDatalog/
+%% tested with java -jar AbcDatalog-0.6.0.jar
 %% also, online: https://datalog.db.in.tum.de/
 
-%entities
+%%%%%%%%%%%%%% FACTS
 
-isa(h0,ho).
-isa(h1,ho).
-isa(h2,ho).
-isa(h3,ho).
-
-isa(c0,co).
-isa(c1,co).
-isa(c2,co).
-isa(c3,co).
-isa(c4,co).
-isa(c5,co).
-
-%feedbacks
-
-isa(b0,fbb).
-isa(b1,fbb).
-isa(b2,fbb).
-isa(b3,fbb).
-isa(b4,fbb).
-
-isa(w0,fbw).
-isa(w1,fbw).
-isa(w2,fbw).
-isa(w3,fbw).
-isa(w4,fbw).
+%entities: ho,co, feedback-b, feedback-w
+isa(h0,ho). isa(h1,ho). isa(h2,ho). isa(h3,ho).
+isa(c0,co). isa(c1,co). isa(c2,co). isa(c3,co). isa(c4,co). isa(c5,co).
+isa(b0,fbb). isa(b1,fbb). isa(b2,fbb). isa(b3,fbb). isa(b4,fbb).
+isa(w0,fbw). isa(w1,fbw). isa(w2,fbw). isa(w3,fbw). isa(w4,fbw).
 
 % sequencing.
+follows(h1,h0). follows(h2,h1). follows(h3,h2).
 
-follows(h1,h0).
-follows(h2,h1).
-follows(h3,h2).
-
-%
-secret(c1,c3,c1,c4).
-secretv(h0,c1).
-secretv(h1,c3).
-secretv(h2,c1).
-secretv(h3,c4).
-%
-guessnfeedback(g1,c1,c0,c1,c2,b2,w0).
-guessnfeedback(g2,c2,c3,c1,c4,b3,w0).
-
-guessv(g1,h0,c1).
-guessv(g1,h1,c0).
-guessv(g1,h2,c1).
-guessv(g1,h3,c2).
-
-guessv(g2,h0,c2).
-guessv(g2,h1,c3).
-guessv(g2,h2,c1).
-guessv(g2,h3,c4).
-%
+% gm g0
+% secret(c1,c3,c1,c4).
+% vsecret(h0,c1). vsecret(h1,c3). vsecret(h2,c1). vsecret(h3,c4).
+% gm g1
+guessnfeedback(g1,c1,c0,c1,c2,b2,w0). guessnfeedback(g2,c2,c3,c1,c4,b3,w0).
+vguess(g1,h0,c1). vguess(g1,h1,c0). vguess(g1,h2,c1). vguess(g1,h3,c2).
+vfeedback(g1,b2,w0).
+% gm g2
+vguess(g2,h0,c2). vguess(g2,h1,c3). vguess(g2,h2,c1). vguess(g2,h3,c4).
+vfeedback(g2,b3,w0).
 
 
+%%%%%%%%%%%%%%%% rules - recursive rules
 
 greater_than(HH,LL) :- follows(HH,MID), greater_than(MID,LL).
 greater_than(HH,LL) :- follows(HH,LL).
 
+%%%%%%%%%%%%%%%% rules - iterative rules
 
 itertools_product_co(CH0,CH1,CH2,CH3) :- isa(CH0,co), isa(CH1,co), isa(CH2,co), isa(CH3,co).    % sz = 1296 = NOC**NOH
 possibilesecrets(CH0,CH1,CH2,CH3) :- itertools_product_co(CH0,CH1,CH2,CH3).
 
-possibilesecretsv(H,C) :- isa(H,ho), isa(C,co).
+vpossibilesecrets(H,C) :- isa(H,ho), isa(C,co).
 
-% example of output = possibilesecretsv(h1, c3)
-
+% OUTPUT SAMPLE: vpossibilesecrets(h1, c3)
 
 % reconciliations with python itertools are mentioned below.
 
-itertools_combinations_ho(H0,H1) :- isa(H0,ho), isa(H1,ho), greater_than(H1,H0).            % = itertools.combinations(range(4), r=2) %%% sz = 6
-itertools_combinations_ho(H0,H1,H2) :- itertools_combinations_ho(H0,H1), itertools_combinations_ho(H0,H2), itertools_combinations_ho(H1,H2).    % = itertools.combinations(range(4), r=3) %%% sz = 4
-itertools_combinations_ho(H0,H1,H2,H3) :- itertools_combinations_ho(H0,H1,H2), itertools_combinations_ho(H0,H1,H3), itertools_combinations_ho(H0,H2,H3), itertools_combinations_ho(H1,H2,H3).  % = itertools.combinations(range(4), r=4) %%% sz = 1
+itertools_combinations_ho(H0,H1) :- isa(H0,ho), isa(H1,ho), greater_than(H1,H0).
+% in python = itertools.combinations(range(4), r=2) %%% sz = 6
+itertools_combinations_ho(H0,H1,H2) :- itertools_combinations_ho(H0,H1), itertools_combinations_ho(H0,H2), itertools_combinations_ho(H1,H2).
+% in python = itertools.combinations(range(4), r=3) %%% sz = 4
+itertools_combinations_ho(H0,H1,H2,H3) :- itertools_combinations_ho(H0,H1,H2), itertools_combinations_ho(H0,H1,H3), itertools_combinations_ho(H0,H2,H3), itertools_combinations_ho(H1,H2,H3).
+% in python = itertools.combinations(range(4), r=4) %%% sz = 1
 
 itertools_permutations_co(CH0,CH1) :- isa(CH0,co), isa(CH1,co), CH0 != CH1. % itertools.permutations(range(6), r=2) %%% sz = 30
 itertools_permutations_co(CH0,CH1,CH2) :- itertools_permutations_co(CH0,CH1), itertools_permutations_co(CH0,CH2), itertools_permutations_co(CH1,CH2). % = itertools.permutations(range(6), r=3) %%% sz = 120
@@ -85,38 +56,43 @@ permutations(CH0,CH1,CH2,CH3) :- itertools_permutations_co(CH0,CH1,CH2,CH3).
 
 %%%%%%%%%%%
 
-% secretv(H,C)?
+% vsecret(H,C)?
 
 
-% guessv(G,H,C)?
+% vguess(G,H,C)?
 
 
 %%%%%%%%%%%
 
 % now show the subset of possibilesecrets(CH0,CH1,CH2,CH3) that have all the combinations of blacks in common with all the feedbacks I have got.
 % 3-steps:
-% step 1: w.r.t. the 'b2' feedbacks: consider the combinations of two holes: 1,2,1,3,1,4 ,,, this is = itertools_combinations_ho(H0,H1)
+% step 1: w.r.t. the 'b2' feedbacks only: consider the combinations of two holes: 1,2,1,3,1,4 ,,, this is = itertools_combinations_ho(H0,H1)
 % step 2: for each combo: return the possibilesecrets for which the color[hole[combo0,1] is the same and the other are different.
 
-%% what are the combo of 4 co that have 2 and only 2 in common with my combo X ??
-
+%% what are the combo of 4 co that have 2 and only 2 ho/co in common with my combo X ??
 
 
 combinations_of_2b_only(H0,H1) :- itertools_combinations_ho(H0,H1).
-% example combinations_of_2b_only(h0, h1)
+% OUTPUT SAMPLE: (#2) combinations_of_2b_only(h0, h2)
 
 possibilesecrets_hoco(H0,CH0,H1,CH1,H2,CH2,H3,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), H0=h0, H1=h1, H2=h2, H3=h3.
-% example possibilesecrets_hoco(h0, c0, h1, c0, h2, c0, h3, c0)
+% OUTPUT SAMPLE: (#2) possibilesecrets_hoco(h0, c0, h1, c0, h2, c0, h3, c1)
 
-possibilesecrets_hoco_2b_only(H0,CH0,H1,CH1,H2,CH2,H3,CH3) :- possibilesecrets_hoco(H0,CH0,H1,CH1,H2,CH2,H3,CH3), combinations_of_2b_only(H02B,H12B).
+possibilesecrets_hoco_2b_only_postgg(H0,C0,H1,C1,H2,C2,H3,C3) :- possibilesecrets_hoco(H0,C0,H1,C1,H2,C2,H3,C3), combinations_of_2b_only(H02B,H12B), H02B=H0.
+possibilesecrets_hoco_2b_only_postgg(H0,C0,H1,C1,H2,C2,H3,C3) :- possibilesecrets_hoco(H0,C0,H1,C1,H2,C2,H3,C3), combinations_of_2b_only(H02B,H12B), H02B=H1.
+
+% eg
+% possibilesecrets_hoco(h0, c0, h1, c0, h2, c0, h3, c1)
+% combinations_of_2b_only(h0, h2)
+% guessnfeedback(g1, c1, c0, c1, c2, b2, w0)
 
 
 
 test1(CH0,CH1,CH2,CH3) :- possibilesecrets_hoco(CH0,CH1,CH2,CH3), guessnfeedback(GG,CH0,CH1,CH2,CH3,BB,WW), BB=b2,  itertools_combinations_ho(H0,H1).
-test2(H,C) :- possibilesecretsv(H,C), guessv(GG,H,C), BB=b2, guessnfeedback(GG,CH0,CH1,CH2,CH3,BB,WW), itertools_combinations_ho(H0,H1), H0=H,H1=H.
+test2(H,C) :- vpossibilesecrets(H,C), vguess(GG,H,C), BB=b2, guessnfeedback(GG,CH0,CH1,CH2,CH3,BB,WW), itertools_combinations_ho(H0,H1), H0=H,H1=H.
 
-test2a(H,C) :- possibilesecretsv(H,C), guessv(GG,H,C), BB=b2, guessnfeedback(GG,CH0,CH1,CH2,CH3,BB,WW), itertools_combinations_ho(H0,H1), H0=H.
-test2b(H,C) :- possibilesecretsv(H,C), guessv(GG,H,C), BB=b2, guessnfeedback(GG,CH0,CH1,CH2,CH3,BB,WW), itertools_combinations_ho(H0,H1), H1=H.
+test2a(H,C) :- vpossibilesecrets(H,C), vguess(GG,H,C), BB=b2, guessnfeedback(GG,CH0,CH1,CH2,CH3,BB,WW), itertools_combinations_ho(H0,H1), H0=H.
+test2b(H,C) :- vpossibilesecrets(H,C), vguess(GG,H,C), BB=b2, guessnfeedback(GG,CH0,CH1,CH2,CH3,BB,WW), itertools_combinations_ho(H0,H1), H1=H.
 
 
 % from now on: untested and TBC
