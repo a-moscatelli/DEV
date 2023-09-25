@@ -23,21 +23,24 @@
 
 
 import requests
-import uuid
+#import uuid
 import datetime
+import socket
 
 
 # In[3]:
 
 
 class Couchdbcli:
-    urlz = 'http://127.0.0.1:5984/'
-    urlc = 'http://am1:ampwd239@127.0.0.1:5984/'
-    logdb = 'logdb'
+    #urlz = 'http://127.0.0.1:5984/'
+    urlc = 'http://am1:ampwd239@127.0.0.1:5984/logdb'
+    #logdb = 'logdb'
     partitionid = 'tag'
-    def __init__(self):
-        devnull = self.getz()
+    def __init__(self,urlc_):
+        self.urlc=urlc_
+        #devnull = self.getz()
     def getz(self):
+        assert False
         # = curl http://127.0.0.1:5984/
         response = requests.get(self.urlz)
         #print(response.status_code)
@@ -47,13 +50,14 @@ class Couchdbcli:
         if predelete:
             #DELETE /{db}
             print('predelete',predelete)
-            response = requests.delete(self.urlc+self.logdb) # , data={'key':'value'})
+            response = requests.delete(self.urlc) # , data={'key':'value'})
             print('predelete',predelete,'response.status_code',response.status_code)
-        response = requests.put(self.urlc+self.logdb) # , data={'key':'value'})        
+        response = requests.put(self.urlc) # , data={'key':'value'})        
         # = curl -X PUT http://admin:password@127.0.0.1:5984/baseball
         # {"ok":true}
         return (response.status_code,response.json())
     def uuidhex__(self):
+        assert False
         # also available: curl -X GET http://127.0.0.1:5984/_uuids
         myuuid = uuid.uuid4()
         if False: myuuids = str(myuuid) # 4aa79f59-4651-41c5-85b1-52adfe9511bc
@@ -67,34 +71,35 @@ class Couchdbcli:
         return utctm
     def log(self,tag,bodydict):
         # curl -X PUT http://admin:passwd@127.0.0.1:5984/db1/6e1295ed6c29495e54cc05947f18c8af -d '{"T":"There","a":"Foo"}'
-        payload = {'datetime':self.getnow__(),self.partitionid:tag,'body':bodydict}
-        if False: response = requests.put(self.urlc+self.logdb+'/'+self.uuidhex__(), json=payload)
+        payload = {'datetime':self.getnow__(),self.partitionid:tag,'body':bodydict,'hostname':socket.gethostname()}
+        #if False: response = requests.put(self.urlc+'/'+self.uuidhex__(), json=payload)
         #POST /{db}
         #Creates a new document in the specified database, using the supplied JSON document structure.
         #If the JSON structure includes the _id field, then the document will be created with the specified document ID.
         #If the _id field is not specified, a new unique ID will be generated, 
         # following whatever UUID algorithm is configured for that server
-        response = requests.post(self.urlc+self.logdb, json=payload)
+        response = requests.post(self.urlc, json=payload)
         return (response.status_code,response.json())
     def getall(self):
         if False:
             # /{db}/_all_docs
-            response = requests.get(self.urlc+self.logdb+'/_all_docs')
+            response = requests.get(self.urlc+'/_all_docs')
         # /movies/_find
         # https://docs.couchdb.org/en/stable/api/database/find.html#post--db-_find
         payload = {"selector":{},
                    "fields": [ "datetime",  self.partitionid ]
                    # , "sort": [{"datetime": "asc"}]
                   }
-        response = requests.post(self.urlc+'logdb/_find', json=payload)
+        response = requests.post(self.urlc+'/_find', json=payload)
         return response.json()['docs']
         #return (response.status_code,response.json())
         #print(response.status_code)
         if False: response.raise_for_status()
         return response.json()
     def get1(self,id):
+        assert False
         # GET /{db}/{docid}
-        response = requests.get(self.urlc+'logdb/'+id)
+        response = requests.get(self.urlc+'/'+id)
         #print(response.status_code)
         if False: response.raise_for_status()
         return response.json()        
@@ -103,13 +108,12 @@ class Couchdbcli:
 # In[4]:
 
 
-cc = Couchdbcli()
+cc = Couchdbcli('http://am1:ampwd239@127.0.0.1:5984/logdb')
 
 
 # In[5]:
 
 
-#print(cc.getz())
 print(cc.createdb(predelete=True))
 print(cc.log('tag1',{}))
 print(cc.log('tag1',{}))
@@ -117,17 +121,10 @@ print(cc.log('tag1',{}))
 print(cc.log('tag1',{}))
 
 
-# In[6]:
+# In[8]:
 
 
 docs = cc.getall()
-for dd in docs:
-    print(dd)
-
-
-# In[7]:
-
-
 docs
 
 
