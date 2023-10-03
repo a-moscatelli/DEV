@@ -1,0 +1,270 @@
+%% tested with java -jar AbcDatalog-0.6.0.jar
+%% also, online: https://datalog.db.in.tum.de/
+%% best syntax highlighter = POSTSCRIPT and Matlab. POSTSCRIPT is perfect but a /^%+$/ is not considered an inline comment
+
+% the co of a ho is a class
+% A,B,C means for A: for B: for C
+
+
+%%%%%%%%%%%% 
+secret(c1,c3,c1,c4).
+%%%%%%%%%%% 
+guessnfeedback(c1,c0,c2,c2,b1,w0).
+guessnfeedback(c2,c3,c1,c4,b3,w0).
+% ... those will be taken in AND.
+guessnfeedback2(c1,c0,c2,c2,fbb,fbx,fbx,fbx).
+guessnfeedback2(c2,c3,c1,c4,fbb,fbw,fbx,fbx).
+
+%%%%%%%%%%% 
+% gm g0
+% secret(c1,c3,c1,c4).
+% vsecret(h0,c1). vsecret(h1,c3). vsecret(h2,c1). vsecret(h3,c4).
+% gm g1
+vguess(g1,h0,c1). vguess(g1,h1,c0). vguess(g1,h2,c1). vguess(g1,h3,c2). vfeedback(g1,b2,w0).
+% gm g2
+vguess(g2,h0,c2). vguess(g2,h1,c3). vguess(g2,h2,c1). vguess(g2,h3,c4). vfeedback(g2,b3,w0).
+
+
+%%%%%%%%%%%%%% FACTS
+
+%entities: ho,co, feedback-b, feedback-w
+isa(h0,ho). isa(h1,ho). isa(h2,ho). isa(h3,ho).
+isa(c0,co). isa(c1,co). isa(c2,co). isa(c3,co). isa(c4,co). isa(c5,co).
+isa(b0,fbb). isa(b1,fbb). isa(b2,fbb). isa(b3,fbb). isa(b4,fbb).
+isa(w0,fbw). isa(w1,fbw). isa(w2,fbw). isa(w3,fbw). isa(w4,fbw).
+isa(bb,fb). isa(ww,fb).
+
+% sequencing.
+follows(h1,h0,ho). follows(h2,h1,ho). follows(h3,h2,ho).
+
+
+%%%%%%%%%%%%%%%% rules - recursive rules
+
+greater_than(HH,LL,CL) :- follows(HH,MID,CL), greater_than(MID,LL,CL).
+greater_than(HH,LL,CL) :- follows(HH,LL,CL).
+% head(3):
+% greater_than(h1, h0, ho)
+% greater_than(h2, h0, ho)
+% greater_than(h2, h1, ho)
+
+
+%%%%%%%%%%%%%%%% rules - iterative rules
+% CL = class
+itertools_product(CH0,CH1,CH2,CH3,CL) :- isa(CH0,CL), isa(CH1,CL), isa(CH2,CL), isa(CH3,CL).    % sz = 1296 = NOC**NOH
+possibilesecrets(CH0,CH1,CH2,CH3) :- itertools_product(CH0,CH1,CH2,CH3,co).
+solution(CH0,CH1,CH2,CH3) :- itertools_product(CH0,CH1,CH2,CH3,co).
+
+% head(3):
+% possibilesecrets(c0, c0, c0, c0)
+% possibilesecrets(c0, c0, c0, c1)
+% possibilesecrets(c0, c0, c0, c2)
+% %
+
+
+vpossibilesecrets(H,C) :- isa(H,ho), isa(C,co).
+
+% OUTPUT SAMPLE: vpossibilesecrets(h1, c3)
+
+% reconciliations with python itertools are mentioned below.
+
+itertools_combinations(H0,H1,CL) :- isa(H0,CL), isa(H1,CL), greater_than(H1,H0,CL).
+% in python = itertools.combinations(range(4), r=2) %%% sz = 6
+itertools_combinations(H0,H1,H2,CL) :- itertools_combinations(H0,H1,CL), itertools_combinations(H0,H2,CL), itertools_combinations(H1,H2,CL).
+% in python = itertools.combinations(range(4), r=3) %%% sz = 4
+itertools_combinations(H0,H1,H2,H3,CL) :- itertools_combinations(H0,H1,H2,CL), itertools_combinations(H0,H1,H3,CL), itertools_combinations(H0,H2,H3,CL), itertools_combinations(H1,H2,H3,CL).
+itertools_combinations_ho(H0,H1,H2,H3) :- itertools_combinations(H0,H1,H2,H3,ho).
+% in python = itertools.combinations(range(4), r=4) %%% sz = 1
+% head(3) =
+% itertools_combinations_ho(h0, h1, h2, h3)
+
+itertools_permutations(CH0,CH1,CL) :- isa(CH0,CL), isa(CH1,CL), CH0 != CH1.
+% in python = itertools.permutations(range(6), r=2) %%% sz = 30
+itertools_permutations(CH0,CH1,CH2,CL) :- itertools_permutations(CH0,CH1,CL), itertools_permutations(CH0,CH2,CL), itertools_permutations(CH1,CH2,CL).
+% in python = itertools.permutations(range(6), r=3) %%% sz = 120
+itertools_permutations(CH0,CH1,CH2,CH3,CL) :- itertools_permutations(CH0,CH1,CH2,CL), itertools_permutations(CH0,CH1,CH3,CL), itertools_permutations(CH0,CH2,CH3,CL), itertools_permutations(CH1,CH2,CH3,CL).
+itertools_permutations_co(CH0,CH1,CH2,CH3) :- itertools_permutations(CH0,CH1,CH2,CH3,co)
+% in python = itertools.permutations(range(6), r=4) %%% sz = 360
+% head(3) =
+% itertools_permutations_co(c0, c5, c4, c2)
+% itertools_permutations_co(c3, c5, c4, c1)
+% itertools_permutations_co(c2, c5, c0, c3)
+
+itertools_permutations_fb(FB0,FB1,FB2,FB3) :- itertools_permutations(FB0,FB1,FB2,FB3,fb)
+
+% short
+perm_co(CH0,CH1,CH2,CH3) :- itertools_permutations(CH0,CH1,CH2,CH3,co).
+perm_fb(FB0,FB1,FB2,FB3) :- itertools_permutations(FB0,FB1,FB2,FB3,fb).
+
+% %%%%
+% feedback of guess x1 : position x2 = peg of color x3
+fb2(g0,h0,b).
+fb2(g0,h1,x).
+fb2(g0,h2,x).
+fb2(g0,h3,x).
+%itertools_permutations_fb1(FBTRY,H0,H1,H2,H3) :- fb2(FBTRY,H0P,H0), fb2(FBTRY,H1P,H1), fb2(FBTRY,H2P,H2), fb2(FBTRY,H3P,H3), H0P=p0,H1P=p1,H2P=p2,H3P=p3.
+
+
+itertools_permutations_fb2(FBTRY,H0,H1) :- 
+fb2(FBTRY,H0P,H0),
+fb2(FBTRY,H1P,H1),
+H0P != H1P.
+% as per itertools.combinations(range(2), r=1)
+
+itertools_permutations_fb2(FBTRY,H0,H1,H2) :- 
+itertools_permutations_fb2(FBTRY,H0,H1),
+itertools_permutations_fb2(FBTRY,H0,H2),
+itertools_permutations_fb2(FBTRY,H1,H2).
+% as per itertools.combinations(range(3), r=2)
+
+itertools_permutations_fb2(FBTRY,H0,H1,H2,H3) :- 
+itertools_permutations_fb2(FBTRY,H0,H1,H2), 
+itertools_permutations_fb2(FBTRY,H0,H1,H3), 
+itertools_permutations_fb2(FBTRY,H0,H2,H3), 
+itertools_permutations_fb2(FBTRY,H1,H2,H3).
+% as per itertools.combinations(range(4), r=3)
+
+%
+% Q: itertools_permutations_fb1(FBTRY,H0,H1,H2,H3)?
+% A: itertools_permutations_fb1(g0, b, w, w, x)
+
+
+itertools_permutations_fb2v2(FBTRY, H0P,H0, H1P,H1) :- 
+fb2(FBTRY, H0P,H0),
+fb2(FBTRY, H1P,H1),
+H0P != H1P.
+% as per itertools.combinations(range(2), r=1)
+
+itertools_permutations_fb2v2(FBTRY, H0P,H0, H1P,H1, H2P,H2) :- 
+itertools_permutations_fb2v2(FBTRY, H0P,H0, H1P,H1),
+itertools_permutations_fb2v2(FBTRY, H0P,H0,              H2P,H2),
+itertools_permutations_fb2v2(FBTRY,              H1P,H1, H2P,H2).
+% as per itertools.combinations(range(3), r=2)
+
+itertools_permutations_fb2v2(FBTRY, H0P,H0, H1P,H1, H2P,H2, H3P,H3) :- 
+itertools_permutations_fb2v2(FBTRY, H0P,H0, H1P,H1, H2P,H2), 
+itertools_permutations_fb2v2(FBTRY, H0P,H0, H1P,H1,             H3P,H3), 
+itertools_permutations_fb2v2(FBTRY, H0P,H0, H2P,H2,             H3P,H3), 
+itertools_permutations_fb2v2(FBTRY,              H1P,H1, H2P,H2, H3P,H3).
+% as per itertools.combinations(range(4), r=3)
+
+% head(3):
+% itertools_permutations_fb2v2(g0, p3, x, p1, w, p0, b, p2, w)
+% itertools_permutations_fb2v2(g0, p1, w, p3, x, p2, w, p0, b)
+% itertools_permutations_fb2v2(g0, p3, x, p0, b, p1, w, p2, w)
+
+% will return half the results ie 12, because of the two ww 
+itertools_permutations_fb2v2a(FBTRY,H0,H1,H2,H3) :-
+itertools_permutations_fb2v2(FBTRY, H0P,H0, H1P,H1, H2P,H2, H3P,H3),
+isa(H0P,ho), isa(H1P,ho), isa(H2P,ho), isa(H3P,ho).
+%head(3):
+%itertools_permutations_fb2v2a(g0, x, b, x, x)
+%itertools_permutations_fb2v2a(g0, b, x, x, x)
+%itertools_permutations_fb2v2a(g0, x, x, b, x)
+
+guess2(g0,c1,c0,c2,c2).
+
+possibilesecrets2(CH0,CH1,CH2,CH3) :- 
+possibilesecrets(CH0,CH1,CH2,CH3), itertools_permutations_fb2v2a(FBTRY, H0, H1, H2, H3), guess2(FBTRY,GC0,GC1,GC2,GC3), H0=b, CH0=GC0.
+possibilesecrets2(CH0,CH1,CH2,CH3) :- 
+possibilesecrets(CH0,CH1,CH2,CH3), itertools_permutations_fb2v2a(FBTRY, H0, H1, H2, H3), guess2(FBTRY,GC0,GC1,GC2,GC3), H1=b, CH1=GC1.
+possibilesecrets2(CH0,CH1,CH2,CH3) :- 
+possibilesecrets(CH0,CH1,CH2,CH3), itertools_permutations_fb2v2a(FBTRY, H0, H1, H2, H3), guess2(FBTRY,GC0,GC1,GC2,GC3), H2=b, CH2=GC2.
+possibilesecrets2(CH0,CH1,CH2,CH3) :- 
+possibilesecrets(CH0,CH1,CH2,CH3), itertools_permutations_fb2v2a(FBTRY, H0, H1, H2, H3), guess2(FBTRY,GC0,GC1,GC2,GC3), H3=b, CH3=GC3.
+
+possibilesecrets3(CH0,CH1,CH2,CH3,FBTRY, H0, H1, H2, H3,GC0,GC1,GC2,GC3) :- 
+possibilesecrets(CH0,CH1,CH2,CH3), itertools_permutations_fb2v2a(FBTRY, H0, H1, H2, H3), guess2(FBTRY,GC0,GC1,GC2,GC3).
+
+
+
+% TBC
+% head(3):
+% possibilesecrets(c0, c0, c0, c0)
+% possibilesecrets(c0, c0, c0, c1)
+% possibilesecrets(c0, c0, c0, c2)
+% %
+
+
+
+
+% permutations of feedack pegs:
+% 1b 2w is equivalent to (and I will ask to provided that in the following format):
+% b w w x
+% I will have to conside all the permutations of that set, which are:
+% 1 2 3 4; b w w x; b w x w; 
+% b w w x; b w x w; 
+% 1b 3x is:
+% b x x x, x b x x, x x b x, x x x b
+% so you take each guess in AND with those permuts
+% c1,c0,c2,c2 b x x x
+% c1,c0,c2,c2 x b x x
+% ...
+% ...
+% c2,c3,c1,c4 b x x x
+% c2,c3,c1,c4 x b x x
+% ...
+% ...
+
+
+
+
+
+%%%%%%%%%%% 
+
+% vsecret(H,C)?
+
+
+% vguess(G,H,C)?
+
+
+%%%%%%%%%%% 
+
+% now show the subset of possibilesecrets(CH0,CH1,CH2,CH3) that have all the combinations of blacks in common with all the feedbacks I have got.
+% 3-steps:
+% step 1: w.r.t. the 'b2' feedbacks only: consider the combinations of two holes: 1,2,1,3,1,4 ,,, this is = itertools_combinations_ho(H0,H1)
+% step 2: for each combo: return the possibilesecrets for which the color[hole[combo0,1] is the same and the other are different.
+
+%% what are the combo of 4 co that have 2 and only 2 ho/co in common with my combo X ??
+
+
+combinations_of_2b_only(H0,H1) :- itertools_combinations_ho(H0,H1).
+% OUTPUT SAMPLE: (#2) combinations_of_2b_only(h0, h2)
+
+possibilesecrets_hoco(H0,CH0,H1,CH1,H2,CH2,H3,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), H0=h0, H1=h1, H2=h2, H3=h3.
+% OUTPUT SAMPLE: (#2) possibilesecrets_hoco(h0, c0, h1, c0, h2, c0, h3, c1)
+
+possibilesecrets_hoco_2b_only_postgg(H0,C0,H1,C1,H2,C2,H3,C3) :- possibilesecrets_hoco(H0,C0,H1,C1,H2,C2,H3,C3), combinations_of_2b_only(H02B,H12B), H02B=H0.
+possibilesecrets_hoco_2b_only_postgg(H0,C0,H1,C1,H2,C2,H3,C3) :- possibilesecrets_hoco(H0,C0,H1,C1,H2,C2,H3,C3), combinations_of_2b_only(H02B,H12B), H02B=H1.
+
+% eg
+% possibilesecrets_hoco(h0, c0, h1, c0, h2, c0, h3, c1)
+% combinations_of_2b_only(h0, h2)
+% guessnfeedback(g1, c1, c0, c1, c2, b2, w0)
+
+
+
+test1(CH0,CH1,CH2,CH3) :- possibilesecrets_hoco(CH0,CH1,CH2,CH3), guessnfeedback(GG,CH0,CH1,CH2,CH3,BB,WW), BB=b2,  itertools_combinations_ho(H0,H1).
+test2(H,C) :- vpossibilesecrets(H,C), vguess(GG,H,C), BB=b2, guessnfeedback(GG,CH0,CH1,CH2,CH3,BB,WW), itertools_combinations_ho(H0,H1), H0=H,H1=H.
+
+test2a(H,C) :- vpossibilesecrets(H,C), vguess(GG,H,C), BB=b2, guessnfeedback(GG,CH0,CH1,CH2,CH3,BB,WW), itertools_combinations_ho(H0,H1), H0=H.
+test2b(H,C) :- vpossibilesecrets(H,C), vguess(GG,H,C), BB=b2, guessnfeedback(GG,CH0,CH1,CH2,CH3,BB,WW), itertools_combinations_ho(H0,H1), H1=H.
+
+
+% from now on: untested and TBC
+
+postg_product_b1(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GG,GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 = CH0, GCH1 != CH1, GCH2 != CH2, GCH3 != CH3, BB=b1.
+postg_product_b1(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GG,GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 != CH0, GCH1 = CH1, GCH2 != CH2, GCH3 != CH3, BB=b1.
+postg_product_b1(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GG,GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 != CH0, GCH1 != CH1, GCH2 = CH2, GCH3 != CH3, BB=b1.
+postg_product_b1(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GG,GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 != CH0, GCH1 != CH1, GCH2 != CH2, GCH3 = CH3, BB=b1.
+
+postg_product_b3w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GG,GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 != CH0, GCH1 = CH1, GCH2 = CH2, GCH3 = CH3, BB=b3,WW=w0.
+postg_product_b3w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GG,GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 = CH0, GCH1 != CH1, GCH2 = CH2, GCH3 = CH3, BB=b3,WW=w0.
+postg_product_b3w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GG,GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 = CH0, GCH1 = CH1, GCH2 != CH2, GCH3 = CH3, BB=b3,WW=w0.
+postg_product_b3w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GG,GCH0,GCH1,GCH2,GCH3,BB,WW), GCH0 = CH0, GCH1 = CH1, GCH2 = CH2, GCH3 != CH3, BB=b3,WW=w0.
+
+
+postg_product_b1w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), BB=b1, WW=w0,     CH0  = GCH0,     CH1 != GCH1, CH2 != GCH1, CH3 != GCH1,     CH1 != GCH2, CH2 != GCH2, CH3 != GCH2,     CH1 != GCH3, CH2 != GCH3, CH3 != GCH3.
+% ... means hole0 = guess hole0, hole(1,2,3) != guess hole(1,2,3) 
+postg_product_b1w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), BB=b1, WW=w0,     CH1  = GCH1,     CH0 != GCH0, CH2 != GCH0, CH3 != GCH0,     CH0 != GCH2, CH2 != GCH2, CH3 != GCH2,     CH0 != GCH3, CH2 != GCH3, CH3 != GCH3.
+postg_product_b1w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), BB=b1, WW=w0,     CH2  = GCH2,     CH1 != GCH1, CH2 != GCH1, CH3 != GCH1,     CH1 != GCH2, CH2 != GCH2, CH3 != GCH2,     CH1 != GCH3, CH2 != GCH3, CH3 != GCH3.
+postg_product_b1w0(CH0,CH1,CH2,CH3) :- possibilesecrets(CH0,CH1,CH2,CH3), guessnfeedback(GCH0,GCH1,GCH2,GCH3,BB,WW), BB=b1, WW=w0,     CH3  = GCH3,     CH1 != GCH1, CH2 != GCH1, CH3 != GCH1,     CH1 != GCH2, CH2 != GCH2, CH3 != GCH2,     CH1 != GCH3, CH2 != GCH3, CH3 != GCH3.
