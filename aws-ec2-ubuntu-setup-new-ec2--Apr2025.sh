@@ -35,6 +35,8 @@ then
         # sudo apt -y install pipx
         # ko: pipx install awscliv2
         # ko: pipx install python3-awscliv2
+        # just follow: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+        
 
 fi
         
