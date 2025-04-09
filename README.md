@@ -12,6 +12,7 @@ frequently used snippets or minimalist components in
 * SQL
 * cypher
 * awk - https://www.gnu.org/software/gawk/manual/gawk.html
+* busybox (docker) - https://busybox.net/downloads/BusyBox.html
 * etc.
 
 script for aws ec2 setup: [bash script](aws-ec2-ubuntu-setup-new-ec2--Apr2025.sh)
