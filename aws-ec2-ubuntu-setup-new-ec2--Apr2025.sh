@@ -27,7 +27,8 @@ fi
 if [ 4 -eq 4 ]
 then
         echo step 4 - begin - install python pip and then aws cli
-        #sudo apt-get -y install python3-pip        
+        sudo apt-get -y install python3-pip        
+        pip -V
         # ko: python3 -m pip install awscliv2
         # ko: sudo apt install python-awscliv2
         # hint: https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3
