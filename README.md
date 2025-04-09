@@ -15,5 +15,6 @@ frequently used snippets or minimalist components in
 * etc.
 
 script for aws ec2 setup:
-https://github.com/a-moscatelli/DEV/blob/main/aws-ec2-ubuntu-setup-new-ec2--Apr2025.sh
+https://github.com/a-moscatelli/DEV/blob/main/aws-ec2-ubuntu-setup-new-ec2--Apr2025.sh [script](aws-ec2-ubuntu-setup-new-ec2--Apr2025.sh) [script](/DEV/aws-ec2-ubuntu-setup-new-ec2--Apr2025.sh) 
+
 
