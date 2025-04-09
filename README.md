@@ -13,6 +13,7 @@ frequently used snippets or minimalist components in
 * cypher
 * awk - https://www.gnu.org/software/gawk/manual/gawk.html
 * busybox (docker) - https://busybox.net/downloads/BusyBox.html
+  * key tools: crond crontab cksum md5sum nc awk httpd hexdump hd catv cal wget **watch**
 * etc.
 
 script for aws ec2 setup: [bash script](aws-ec2-ubuntu-setup-new-ec2--Apr2025.sh)
